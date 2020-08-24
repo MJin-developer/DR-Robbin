@@ -1,12 +1,13 @@
  /* 기본... 설정 */
-    
+ @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+ @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
     *{
         margin: 0;
         padding: 0;
     }
     body{
         margin: 0px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Nanum Myeongjo'
         }
     /* 헤더 부분 스타일 지정*/
     .header{
@@ -23,17 +24,25 @@
         li{
             list-style: none;
         }
+        .menu{
+            display: flex;
+            align-items: center;
+        }
+
         /* 최상위 메뉴 수평 */
         .menu .mli{
             float: left;
             padding: 0;
             position: relative;
         }
+
         /* 앵커요소 설정 */
         .menu li .ma{
             text-decoration: none;
             color: black;
             margin-left: 40px;
+            font-family: 'Nanum Myeongjo';
+            font-weight: 700;
         }
         /* 서브메뉴 나와도 위치고정 및 설정 */
         .sub1{
@@ -56,6 +65,7 @@
         .sa{
             margin-top: 10px;
             text-decoration: none;
+            font-family: 'Nanum Gothic';
             color: black;
         }
         .menu li:hover .sub2{
@@ -85,11 +95,14 @@
                 z-index: -1;
             }
             .main .mainh1{
-                font-size: 2em;
+                font-size: 2.5em;
+                font-family: 'Nanum Gothic';
             }
             .main .mainh4{
                 line-height: 3;
                 margin-bottom: 25%;
+                font-family: 'Nanum Gothic';
+                font-weight: 550;
             }
      
            
