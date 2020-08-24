@@ -1,6 +1,14 @@
 body{padding: 0; margin: 0;}
 #mainimg{width: 100%;}
 
+@keyframes anim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
 #region{
     padding: 30px;
 
@@ -124,8 +132,15 @@ h5{
     font-size: 20px;
 }
 
+#store:hover{
+    background-color: #003f00;
+    
+    color: white;
+    transition:all 0.4s;
+
+}
+
 #a1{
     color: grey;
     text-decoration-line: none;
 }
-
