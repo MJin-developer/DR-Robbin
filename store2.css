@@ -19,40 +19,11 @@ body{padding: 0; margin: 0;}
 }
 
 #seoul{
-    color: black;
-}
-
-#south{
     color: grey;
 }
 
-#sudo{
-    position: relative;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    bottom: 20px;
-    
-}
-
-#under_seoul{
-    position: relative;
-    width: 60%;
+#south{
     color: black;
-    background-color: black;
-    height: 1;
-    border: 0.3px solid black;
-}
-
-#container1{
-    margin-top: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    position: relative;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
 }
 
 #container2{
@@ -71,19 +42,23 @@ body{padding: 0; margin: 0;}
     padding: 20px;
 }
 
-#card3{
-    width: 35%;
-    padding-left: 10px;
-}
-
 #card1{
     width: 35%;
     padding-right: 10px;
 }
 
-#text_container{
+#a1{
+    color: grey;
+    text-decoration-line: none;
+}
+
+#sudo{
+    position: relative;
+    font-size: 40px;
     display: flex;
     justify-content: center;
+    bottom: 20px;
+    
 }
 
 h5{
@@ -91,7 +66,20 @@ h5{
     font-size: 18px;
 }
 
+#store{
+    display: flex;
+    justify-content: center;
+    background-color: #dfdfdf;
+    padding: 20px;
+    font-size: 20px;
+}
+
 #button_container{
+    display: flex;
+    justify-content: center;
+}
+
+#text_container{
     display: flex;
     justify-content: center;
 }
@@ -116,16 +104,16 @@ h5{
     border-bottom: 2px solid grey;
 }
 
-#store{
-    display: flex;
-    justify-content: center;
-    background-color: #dfdfdf;
-    padding: 20px;
-    font-size: 20px;
+#card3{
+    width: 35%;
+    padding-left: 10px;
 }
 
-#a1{
-    color: grey;
-    text-decoration-line: none;
+#under_seoul{
+    position: relative;
+    width: 60%;
+    color: black;
+    background-color: black;
+    height: 1;
+    border: 0.3px solid black;
 }
-
