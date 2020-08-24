@@ -1,0 +1,68 @@
+*{padding: 0px; margin: 0;}
+
+#topImage{
+    background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/04/recruit-header-01.jpg);
+    width: 100%;
+    height: 500px;
+}
+
+div #topImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+
+#holisticImage{
+    display: flex;
+    justify-content: center;
+}
+
+#wrapImages{
+    width: 62%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#images1{
+    background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/04/coffee-banner.jpg);
+    width: 550px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#images1:hover{
+}
+
+#images2{
+    background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/04/cook-banner2.jpg);
+    width: 550px;
+    height: 350px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.images{
+
+}
+
+
+
