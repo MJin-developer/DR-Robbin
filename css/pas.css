@@ -1,25 +1,109 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
-         body{
-            padding: 0;
-            margin: 0;
-        }
 
-       .navbar{
-           display: flex;
-           text-align: center;
-           text-decoration: none;
-           background-color: white;
-           padding-top: 30px;
-           padding-bottom: 30px;
-           padding-left: 400px;
-           padding-right: 400px;
 
-       
-       }
+body{
+    padding: 0;
+    margin: 0;
+    }
 
-       .navbar a{
+.navbar{
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        background-color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 400px;
+        padding-right: 400px;
+}
+
+.navbar a{
           
            margin: 0 auto;
            
-       }
+}
+
+.card{
+    width: 25rem;
+    border: none !important; 
+    margin : 0 auto;
+    text-align: center;
+    
+}
+
+.card h3{
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+
+.card h4{
+    font-family: 'Nanum Myeongjo', serif;
+    color: grey;
+    font-size: 15px;
+   
+}
+
+.card p{
+    font-size: 15px;
+}
+
+.card #hot{
+    margin: 0 auto;
+}
+
+.card #fire{
+    margin: 0 auto;
+}
+
+.card #drpi{
+    margin-top: 0px;
+}
+
+.ht #hdtext{
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+
+.ht #hdtext2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.ht #line{
+   margin-left: 250px;
+   margin-right: 250px;
+
+   border : 0.1px solid black;
+
+}
+
+.card #id{
+    margin: 0 auto;
+}
+
+
+
+
+
+
+.row{
+    padding: 20px 300px 20px 300px;
+}
+
+
+
+
+
+
+
 

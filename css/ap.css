@@ -33,6 +33,7 @@ body{
 }
 
 .card h3{
+    margin-top: 30px;
     font-size: 20px;
     font-family: 'Nanum Myeongjo', serif;
 
@@ -47,8 +48,6 @@ body{
 .card p{
     font-size: 15px;
 }
-
-
 
 .row{
     padding: 20px 300px 20px 300px;
