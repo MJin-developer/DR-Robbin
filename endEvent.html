@@ -24,11 +24,8 @@
         }
         .row{
             display: flex;
-            justify-content: center;
-            margin-bottom: 60px;
-        }
-        .lastrow{
-            margin-left: 10px;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
         }
         .card p{
             font-weight: 600;
@@ -39,15 +36,18 @@
             border-radius: 0px;
             margin: 0px 15px;
             background-color: whitesmoke;
+            margin-bottom: 60px;
+            width: 30%;
+            min-width: 200px;
         }
         #btn{
             width: 120px;
             height: 45px;
-            border: 2px solid darkgreen;
+            border: 2px solid green;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 30px;
+            margin-top: 40px;
         }
         .card a{
             font-size: 0.8em;
@@ -58,7 +58,7 @@
 <body>
     <div id="page">
         <div class="row">
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/endEvent10.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>설문조사 참여 이벤트 5월 당첨자 발표</p>
@@ -66,7 +66,7 @@
                 </div>
             </div>
     
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/endEvent9.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>시식체험단 당첨자 발표!</p>
@@ -74,7 +74,7 @@
                 </div>
             </div>
     
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/endEvent8.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>[닥터로빈X티몬] 가정의 달 이벤트</p>
@@ -83,7 +83,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/endEvent7.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>천원의 행복 이벤트</p>
@@ -91,7 +91,7 @@
                 </div>
             </div>
     
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/endEvent6.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>코코넛 젤라또 출시 이벤트</p>
@@ -99,7 +99,7 @@
                 </div>
             </div>
     
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/endEvent5.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>[김해점] 오직, 김해점에서만 시그니처 세트를!</p>
@@ -108,7 +108,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/endEvent4.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>[울산점] WELCOME 이벤트</p>
@@ -116,7 +116,7 @@
                 </div>
             </div>
     
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/endEvent3.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>배민 라이더스 할인 이벤트</p>
@@ -124,7 +124,7 @@
                 </div>
             </div>
     
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/endEvent2.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>겨울신메뉴, 칠리라이스 2종 출시</p>
@@ -132,8 +132,8 @@
                 </div>
             </div>
         </div>
-        <div class="lastrow">
-            <div class="card" style="width: 23.5rem;">
+        <div class="row">
+            <div class="card">
                 <img src="./img/endEvent1.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>와인과 함께하는 특별한 메뉴!</p>

@@ -24,11 +24,8 @@
         }
         .row{
             display: flex;
-            justify-content: center;
-            margin-bottom: 60px;
-        }
-        .lastrow{
-            margin-left: 10px;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
         }
         .card p{
             font-weight: 600;
@@ -39,15 +36,18 @@
             border-radius: 0px;
             margin: 0px 15px;
             background-color: whitesmoke;
+            margin-bottom: 60px;
+            width: 30%;
+            min-width: 200px;
         }
         #btn{
             width: 120px;
             height: 45px;
-            border: 2px solid darkgreen;
+            border: 2px solid green;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 30px;
+            margin-top: 40px;
         }
         .card a{
             font-size: 0.8em;
@@ -58,7 +58,7 @@
 <body>
     <div id="page">
         <div class="row">
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/shopEvent4.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>닥터로빈 울산점 폐업 안내</p>
@@ -66,7 +66,7 @@
                 </div>
             </div>
     
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/shopEvent3.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>닥터로빈 해운대점 폐업 안내</p>
@@ -74,7 +74,7 @@
                 </div>
             </div>
     
-            <div class="card" style="width: 23.5rem;">
+            <div class="card">
                 <img src="./img/shopEvent2.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>[강서점] 단체 예약 혜택</p>
@@ -82,8 +82,8 @@
                 </div>
             </div>
         </div>
-        <div class="lastrow">
-            <div class="card" style="width: 23.5rem;">
+        <div class="row">
+            <div class="card">
                 <img src="./img/shopEvent1.jpg" class="card-img-top">
                 <div class="card-body">
                     <p>[메리어트점] 메리어트점 이용고객 할인 이벤트</p>

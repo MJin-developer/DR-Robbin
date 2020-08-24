@@ -52,10 +52,38 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
+            opacity: 0;
+        }
+        iframe, object, embed{
+            max-width: 100%;
+        }
+        button:hover{ cursor: pointer; }
+        button:focus{
+            background-color: green;
+            border: none;
+            border-radius: 0px;
+            font-size: 22px;
+            outline: none;
+            font-weight: bold;
+            color: white;
+            animation-name: fadein;
+            animation-duration: 1s;
+        }
+        @keyframes fadein{
+            from{ opacity: 0; }
+            to{ opacity: 1.0; }
         }
     </style>
 
     <script>
+        function onload(){
+            var btn=document.getElementsByClassName('btn');
+            btn[0].focus();
+            var ev=document.getElementById('iframe');
+            ev.style.transition="opacity 1s";
+            ev.style.opacity="1.0";
+        }
         function nowEvent(){
             var ev=document.getElementById('iframe');
             ev.src="./nowEvent.html";
@@ -70,8 +98,7 @@
         }
     </script>
 </head>
-<body>
-
+<body onload="onload()">
     <div id="page">
         <header>
             <div id="title">
