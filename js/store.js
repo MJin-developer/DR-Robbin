@@ -108,3 +108,21 @@ function b13(){
 function b14(){
     open("about:blank").location.href="https://catchtable.co.kr/05";
 }
+
+function Modal(){
+    var open = document.getElementById("b2");
+    var modal = document.querySelector(".modal_container");
+    var close = document.getElementById('xb');
+    var min = document.getElementById('min');
+    
+    open.onclick = () => {
+        modal.style.display = "flex";
+    };
+
+    close.onclick = () => {
+        modal.style.display = "none";
+    };
+}
+
+
+    

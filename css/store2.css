@@ -108,6 +108,12 @@ h5{
     border-bottom: 2px solid grey;
 }
 
+#b4{
+    background-color: #dfdfdf;
+    border-right: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
 #card3{
     width: 35%;
     padding-left: 10px;

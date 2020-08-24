@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./store.css">
-    <script src="./store.js"></script>
-    
+    <link rel="stylesheet" href="./css/store.css">
+    <script src="./js/store.js"></script>
+
 </head>
-<body>
-    <img src="./storeimg1.png" alt="" id="mainimg">
+<body onload="loaded()">
+    <img src="./img/storeimg1.png" alt="" id="mainimg">
 
     <div id="region">
         <h3 id="seoul">수도권</h3>
@@ -33,7 +33,7 @@
             <br>
             <div id="button_container">
                 <div class="button" id="b1" onclick="b1()">예약하기</div>
-                <div class="button" id="b2">딜리버리</div>
+                <div class="button" id="b2" onclick="Modal()">딜리버리</div>
             </div>
         </div>
 
@@ -48,7 +48,7 @@
             <br>
             <div id="button_container">
                 <div class="button" id="b1" onclick="b2()">예약하기</div>
-                <div class="button" id="b2">딜리버리</div>
+                <div class="button" id="b2" onclick="Modal()">딜리버리</div>
             </div>
         </div>
 
@@ -63,7 +63,7 @@
             <br>
             <div id="button_container">
                 <div class="button" id="b1" onclick="b3()">예약하기</div>
-                <div class="button" id="b2">딜리버리</div>
+                <div class="button" id="b2" onclick="Modal()">딜리버리</div>
             </div>
         </div>
     </div>
@@ -248,6 +248,20 @@
             
         </div>
     </div>
+
+    <div class="modal_container" style="display: none;">
+        <img src="./img/x.png" alt="" id="xb">
+        <div class="modal">
+            <div class="modal_title">
+                <h3 id="mtitle">딜리버리</h3>
+                <hr id="line">
+                <h3 id="mcontent">사용하시는 배달 어플을<br>선택해주세요</h3>
+                <img src="./img/min.png" alt="" id="min">
+            </div>
+        
+        
+    </div>
+
 
 </body>
 </html>
