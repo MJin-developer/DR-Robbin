@@ -1,0 +1,187 @@
+ /* 기본... 설정 */
+    
+ *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+/* 헤더 부분 스타일 지정*/
+.header{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+    height: 90px; /*★★★네비 지정후 높이 변경해야함 100*/
+    position: fixed; /*상단 고정*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }   
+    li{
+        list-style: none;
+    }
+    /* 최상위 메뉴 수평 */
+    .menu .mli{
+        float: left;
+        padding: 0;
+        position: relative;
+    }
+    /* 앵커요소 설정 */
+    .menu li .ma{
+        text-decoration: none;
+        color: black;
+        margin-left: 40px;
+    }
+    /* 서브메뉴 나와도 위치고정 및 설정 */
+    .sub1{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+    /* 호버 설정  */
+    .menu li:hover .sub1{
+        display: block;
+        border: 1px solid black;
+        margin-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 100px;
+        padding-left: 20px;
+        background-color: white;
+    }
+    .sa{
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    .menu li:hover .sub2{
+        display: block;
+        border: 1px solid black;
+        margin-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 100px;
+        padding-left: 20px;
+        background-color: white;
+    }
+    .sub2{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+  /* ----------------- */
+
+  /* lab 이미지 설정 */
+    .labmain{
+        display: flex;
+        background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/04/dr-robbin-lab-header-yellowjpg.jpg);
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        color: white;
+        font-size: 2em;
+    }
+
+    /* 글씨 위치 */
+    .labintro{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .labintro p{
+        margin-top: 30px;
+    }
+    
+    /* 비디오 설정   */
+    .video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    /* 플렉스 위치 2/2 설정 */
+    .invention{
+        background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/06/book-your-table-wall.jpg);
+        display: flex;
+        flex-direction: row;
+        color: white;
+        width: 100%;
+        height: 800px;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+    .invention .inv1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 110px;
+    }
+    .invention .inv2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mt{
+        margin-top: 80px;
+    }
+    .m5{
+        margin-top: 40px;
+    }
+    
+    /* 그림밑 텍스트 위치설정 */
+    .stevia{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 200px;
+    }
+    .stevia p{
+        margin-top: 20px;
+    }
+
+
+    /* 나란히 놓기 설정 가운데 */
+    .release{
+        background-color:#eeeeee;
+        text-align: center;
+    }
+
+    .verificationT{
+        margin-top: 150px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    .verification{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;  
+        margin-bottom: 150px;          
+    }
+    .verification div{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    /* 푸터  */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 60px;
+        
+    }
+
+    .footerimg{
+        display: flex;
+        justify-content: space-between;
+    }

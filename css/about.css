@@ -1,0 +1,154 @@
+ /* 기본... 설정 */
+    
+ *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+/* 헤더 부분 스타일 지정*/
+.header{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+    height: 90px; /*★★★네비 지정후 높이 변경해야함 100*/
+    position: fixed; /*상단 고정*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }   
+    li{
+        list-style: none;
+    }
+    /* 최상위 메뉴 수평 */
+    .menu .mli{
+        float: left;
+        padding: 0;
+        position: relative;
+    }
+    /* 앵커요소 설정 */
+    .menu li .ma{
+        text-decoration: none;
+        color: black;
+        margin-left: 40px;
+    }
+    /* 서브메뉴 나와도 위치고정 및 설정 */
+    .sub1{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+    /* 호버 설정  */
+    .menu li:hover .sub1{
+        display: block;
+        border: 1px solid black;
+        margin-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 100px;
+        padding-left: 20px;
+        background-color: white;
+    }
+    .sa{
+        margin-top: 10px;
+        text-decoration: none;
+        color: black;
+    }
+    .menu li:hover .sub2{
+        display: block;
+        border: 1px solid black;
+        margin-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 100px;
+        padding-left: 20px;
+        background-color: white;
+    }
+
+    .sub2{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+
+    /* --------------------------- */
+    /* about이미지 넣기 */
+    .aboutMain{
+        display: flex;
+        background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/04/robbin-main-slider-modesty.jpg);
+        width: 100%;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+    }
+    /* 글씨 색 */
+    .amh1{ 
+        color: white;
+    }
+    /* 위아래 여백 설정 */
+    .aboutInfo{
+        margin-top: 200px;
+        margin-bottom: 200px;
+        text-align: center;
+    }   
+    .aboutInfo p{
+        margin-top: 20px;
+    }
+
+    
+/*  */
+    .aboutvision{
+        background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/04/main-slider-frypan-food.jpg);
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .healthy{
+        width: 80%;
+        display: flex;   
+    }
+    .hh4{
+        margin-top: 50px;
+    }
+    .blank{
+        width: 400px;
+        height: 150px;
+        opacity: 0;
+    }
+
+    .vision{
+        display: flex;
+        width: 85%;
+        justify-content: space-around;
+        align-items: center;
+        text-align: start
+    }
+
+    
+
+    /* 푸터  */
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 60px;
+        
+    }
+
+    .footerimg{
+        display: flex;
+        justify-content: space-between;
+    }

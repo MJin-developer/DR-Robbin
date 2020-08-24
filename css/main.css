@@ -1,0 +1,271 @@
+ /* 기본... 설정 */
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    /* 헤더 부분 스타일 지정*/
+    .header{
+        margin: 0px;
+        padding: 0px;
+        background-color: white;
+        width: 100%;
+        height: 90px; /*★★★네비 지정후 높이 변경해야함 100*/
+        position: fixed; /*상단 고정*/
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        }   
+        li{
+            list-style: none;
+        }
+        /* 최상위 메뉴 수평 */
+        .menu .mli{
+            float: left;
+            padding: 0;
+            position: relative;
+        }
+        /* 앵커요소 설정 */
+        .menu li .ma{
+            text-decoration: none;
+            color: black;
+            margin-left: 40px;
+        }
+        /* 서브메뉴 나와도 위치고정 및 설정 */
+        .sub1{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+        /* 호버 설정  */
+        .menu li:hover .sub1{
+            display: block;
+            border: 1px solid black;
+            margin-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 100px;
+            padding-left: 20px;
+            background-color: white;
+        }
+        .sa{
+            margin-top: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .menu li:hover .sub2{
+            display: block;
+            border: 1px solid black;
+            margin-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 100px;
+            padding-left: 20px;
+            background-color: white;
+        }
+
+        .sub2{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+
+        
+            
+
+            /* 메인 사진  */
+            .main{
+                position: absolute;
+                z-index: -1;
+            }
+            .main .mainh1{
+                font-size: 2em;
+            }
+            .main .mainh4{
+                line-height: 3;
+                margin-bottom: 25%;
+            }
+     
+           
+           /* 부트스트랩 글씨 크기지정 */
+            .carousel-inner{
+                font-size: 3em;
+            }
+
+            
+            /* 국내 설명 설정 */
+            /* 글씨체만 변경 */
+            .info{
+                margin-top: 100px;
+                margin-bottom: 120px;
+            }
+            .info .infop{
+                line-height: 22pt;
+            }
+            .about{
+                font-size: 20px;
+                margin: 40px;
+            }
+
+            /* 콩 이야기 위치 지정 */
+            .cream{
+                text-align: center;
+            }
+            #bean{
+                display: flex;
+                flex-direction: column;
+                background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/04/food-on-the-table2.jpg);
+                width: 100%;
+                height: 600px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+            }
+            #bean .beanh5{
+                color: white;
+                line-height: 30pt;
+            }
+
+            
+
+            /* 사진 리스트 설정.... 위치  */
+            /* .mainmenu{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #foodimg1{
+                float: left;
+            }
+            
+            .mainmenu ul{   
+                height: 650px;
+            }
+
+            .mainmenu ul li{
+                display: inline;
+            } */
+
+            /* 글씨 설정 */
+            .foodt{
+                text-align: center;
+                margin-top: 150px;
+            }
+            .food .foodh1{
+                margin-top: 100px;
+                margin-bottom: 70px;
+                font-size: 3em;
+            }
+
+            /* 사진 테이블여역 */
+            .food{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 80px;
+                margin-bottom: 150px;
+            }
+            .tableimg{
+                width: 300px;
+                height: 500px;
+                margin: 1px;
+            }
+            .tableimg2{
+                width: 300px;
+                height: 250px;
+                margin: 1px;
+            }
+
+
+
+            /* 스토어 영역 설정 */
+            .stores{
+                display: flex;
+                flex-direction: column;
+                background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/10/main-store-bg-1920.jpg);
+                width: 100%;
+                height: 600px;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                color: white;
+            }
+            .stores .storesh1{
+                margin: 40px;
+                
+            }
+            .stores a{
+                color: white;
+                border: 3px solid white;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                padding-right: 40px;
+                padding-left: 40px;
+                margin: 40px;
+            }
+            
+
+
+            /* 예약및 카톡연결*/
+            .BookandContact{
+                background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/06/book-your-table-wall.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: 200px;
+                margin-bottom: 100px;
+                height: 800px;
+                color: white;
+            }
+
+            .BookandContact .book{
+                text-align: center;
+            }
+            .bookrap{
+                width: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .book .bookh1{
+                margin-bottom: 80px;
+            }
+
+            .book a{
+                color: white;
+                border: 3px solid white;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                padding-right: 40px;
+                padding-left: 40px;
+                margin: 40px;
+            }
+            .kakao{
+                text-align: center;
+                margin-bottom: 100px;
+            }
+            .kakao .kakaoh1{
+                margin: 80px;
+            }
+
+            
+            /* 푸터 */
+            .footer{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 60px;
+                
+            }
+
+            .footerimg{
+                display: flex;
+                justify-content: space-between;
+            }
