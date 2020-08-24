@@ -1,4 +1,4 @@
-body{padding: 0; margin: 0;}
+body{padding: 0; margin: 0; text-decoration-line: none;}
 #mainimg{width: 100%;}
 
 #region{
@@ -98,6 +98,10 @@ h5{
     border: 3px solid #005f00;
 }
 
+#b1:hover{
+    cursor: pointer;
+}
+
 #b2{
     background-color: #dfdfdf;
     border-right: 2px solid grey;
@@ -116,4 +120,85 @@ h5{
     background-color: black;
     height: 1;
     border: 0.3px solid black;
+}
+
+#store{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    background: #dfdfdf;
+    font-size: 20px;
+    transition: all 0.4s;
+}
+
+#b2:active{
+    border: 0px solid grey;
+    border-left: 2px solid grey;
+    border-top: 2px solid grey;
+}
+
+#store:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background: #003f00;
+    transition: all 0.4s;
+}
+
+#store:hover{
+    cursor: pointer;
+    color: white;
+    opacity: 0.9;
+    
+}
+
+.store_box:before{
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.store_box:hover:before{
+    width: 100%;
+}
+
+#store2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    background: #dfdfdf;
+    font-size: 20px;
+    transition: all 0.4s;
+}
+
+#store2:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background: #000000;
+    transition: all 0.4s;
+}
+
+#store2:hover{
+    color: white;
+    opacity: 0.9;
+    
+}
+
+.store_box2:before{
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.store_box2:hover:before{
+    width: 100%;
+}
+
+#b3{
+    border: 3px solid #005f00;
 }

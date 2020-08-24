@@ -1,14 +1,6 @@
 body{padding: 0; margin: 0;}
 #mainimg{width: 100%;}
 
-@keyframes anim {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-
-
 #region{
     padding: 30px;
 
@@ -118,26 +110,56 @@ h5{
     border: 3px solid #005f00;
 }
 
+#b1:hover{
+    cursor: pointer;
+}
+
 #b2{
     background-color: #dfdfdf;
     border-right: 2px solid grey;
     border-bottom: 2px solid grey;
 }
 
+#b2:active{
+    border: 0px solid grey;
+    border-left: 2px solid grey;
+    border-top: 2px solid grey;
+}
+
 #store{
     display: flex;
     justify-content: center;
-    background-color: #dfdfdf;
+    position: relative;
     padding: 20px;
+    background: #dfdfdf;
     font-size: 20px;
+    transition: all 0.4s;
+}
+
+#store:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background: #003f00;
+    transition: all 0.4s;
 }
 
 #store:hover{
-    background-color: #003f00;
-    
+    cursor: pointer;
     color: white;
-    transition:all 0.4s;
+    opacity: 0.9;
+    
+}
 
+.store_box:before{
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.store_box:hover:before{
+    width: 100%;
 }
 
 #a1{
