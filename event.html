@@ -5,107 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        *{
-            width: 100%;
-            margin: 0px auto;
-        }
-
-        #title{
-            margin: 0px;
-            width: 100%;
-            height: 400px;
-            background-image: url('./img/EventNotice.JPG');
-            background-size: cover;
-            color: white;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        #t1{
-            margin-bottom: 0.5em;
-            font-family: serif;
-            font-size: 45px;
-        }
-        #t2{font-size: 23px;}
-
-        #eventButton{
-            display: flex;
-            flex-direction: row;
-            width: 600px;
-            height: 58px;
-            margin-top: 120px;
-        }
-        .btn{
-            background-color: whitesmoke;
-            border: none;
-            border-radius: 0px;
-            font-size: 22px;
-            outline: none;
-            font-weight: bold;
-        }
-        #iframe{
-            padding-top: 27px;
-            width: 1300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            opacity: 0;
-        }
-        iframe, object, embed{
-            max-width: 100%;
-        }
-        button:hover{ cursor: pointer; }
-        button:focus{
-            background-color: green;
-            border: none;
-            border-radius: 0px;
-            font-size: 22px;
-            outline: none;
-            font-weight: bold;
-            color: white;
-            opacity: 1;
-	        animation-name: fadeOpacity;
-	        animation-iteration-count: 1;
-	        animation-timing-function: ease-in;
-	        animation-duration: 0.5s;
-        }
-        @keyframes fadeOpacity {
-	        0% { opacity: 1; }
-            50% { opacity: 0.8; }
-            100% { opacity: 1; }
-        }
-    </style>
-
-    <script>
-        function onload(){
-            var btn=document.getElementsByClassName('btn');
-            btn[0].focus();
-            var ev=document.getElementById('iframe');
-            ev.style.transition="opacity 1s";
-            ev.style.opacity="1.0";
-        }
-        function nowEvent(){
-            var ev=document.getElementById('iframe');
-            ev.src="./nowEvent.html";
-        }
-        function shopEvent(){
-            var ev=document.getElementById('iframe');
-            ev.src="./shopEvent.html";
-        }
-        function endEvent(){
-            var ev=document.getElementById('iframe');
-            ev.src="./endEvent.html";
-        }
-    </script>
+    <link href="./css/event.css" rel="stylesheet" type="text/css">
+    <script src="./js/event.js"></script>
 </head>
+
 <body onload="onload()">
     <div id="page">
         <header>
-            <div id="title">
+            <div id="title" style="background-image: url('./img/EventNotice.JPG');">
                 <h1 id="t1"><strong>Event Notice</strong></h1>
                 <h2 id="t2"><strong>지금 닥터로빈의 새로운 소식을 만나보세요!</strong></h2>
             </div>
@@ -119,6 +26,5 @@
             <iframe id="iframe" src="./nowEvent.html" frameborder="0" height="2600px"></iframe>
         </section>
     </div>
-    
 </body>
 </html>
