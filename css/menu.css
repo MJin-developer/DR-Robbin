@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
          body{
              padding: 0;
@@ -5,23 +6,68 @@
          }
 
         .navbar{
+
+            width: 60%;
             display: flex;
-            text-align: center;
-            text-decoration: none;
-            background-color: white;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 400px;
-            padding-right: 400px;
-
-        
-        }
-
-        .navbar a{
-           
-            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 50px;
             
         }
+
+        .navbar *{
+            margin : auto;
+            font-size: 20px;
+            color: grey;   
+        }
+
+        .navbar *:hover{
+            text-decoration-line: none;
+            color: grey;
+        }
+
+        .navbar #nt{
+            color: black;
+        }
+
+
+.header{
+    width: 100%;
+    background-image: url(../img/Newb.jpg);
+   
+    background-position: center;
+    
+    
+}
+
+.header #hd1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+
+.header #hdline{
+   border: 2px solid white;
+   margin-left: auto;
+   margin-right: auto;
+   width: 6%;
+   margin-top: 40px;
+}
+
+.header #hd2{
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    
+}
+
+
 
        
 

@@ -1,25 +1,115 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
-         body{
-            padding: 0;
-            margin: 0;
+body{
+    padding: 0;
+    margin: 0;
+    }
+
+
+    .header{
+        width: 100%;
+        background: url(../img/Beb.jpg);
+        background-position: center;
+    }
+    
+    .header #hd1{
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        padding-top: 150px;
+        font-family: 'Nanum Myeongjo', serif;
+    
+    }
+    
+    .header #hdline{
+       border: 2px solid white;
+       margin-left: auto;
+       margin-right: auto;
+       width: 6%;
+       margin-top: 40px;
+    }
+    
+    .header #hd2{
+        font-size: 23px;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 150px;
+        
+    }
+    
+    .navbar{
+
+        width: 60%;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+    .navbar *{
+        margin : auto;
+        font-size: 20px;
+        color: grey;   
+    }
+
+    .navbar *:hover{
+        text-decoration-line: none;
+        color: grey;
+    }
+
+    .navbar #nt{
+        color: black;
+    }
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}         
+
+.card {
+      width: 30%;
+      border: none !important; 
+      height: 55%;
+      text-align: left; 
+      padding: 25px;
+     }
+
+.card #beh #bep{
+    font-size: 13px;
+    display: inline;
+}
+
+.card #bepp{
+    font-size: 13px;
+    display: inline;
+}
+
+     
+
+         
+
+.card h3{
+         padding-top: 30px;
+         font-size: 20px;
+         font-family: 'Nanum Myeongjo', serif;
+         display: inline;
+            
         }
-
-       .navbar{
-           display: flex;
-           text-align: center;
-           text-decoration: none;
-           background-color: white;
-           padding-top: 30px;
-           padding-bottom: 30px;
-           padding-left: 400px;
-           padding-right: 400px;
-
+            
+.card h4{
+         font-family: 'Nanum Myeongjo', serif;
+         color: grey;
+         font-size: 15px;
+         display: inline;
        
-       }
-
-       .navbar a{
-          
-           margin: 0 auto;
-           
-       }
+               
+        }             
+             
+             
 
