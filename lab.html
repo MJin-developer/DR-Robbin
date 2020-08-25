@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab</title>
     <link rel="stylesheet" href="./css/lab.css">
+    <script src="./js/dr.robin.js"></script>
 </head>
 <body>
 
-    <!-- 헤더역역 -->
-    <header class="header"> 
+ <!-- 헤더역역 -->
+<header class="header"> 
+    <div class="headerwrap">
+    <div class="ww1">
         <div class="logo">
             <!-- 로고 이미지 = 클릭시 메인 이미지 이동 -->
             <a href="./Main.html">
@@ -48,7 +51,25 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </div>  <!-- ww1 -->
+   
+
+        <div class="ww2">
+            <div class="logo">
+                <!-- 로고 이미지 = 클릭시 메인 이미지 이동 -->
+                <a href="./Main.html">
+                    <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/dr-robbin-logo-green-150.png" alt="dr-robbin">
+                </a>
+            </div>
+            <!-- 햄버거 메뉴 -->
+            <div id="wrap" onclick="ham()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</header>
 
     <!-- lab메인 이미지 -->
     <div class="labmain">
@@ -58,19 +79,20 @@
 
     
     <!-- 랩소개 -->
-    <div style="margin:200px">
+    <div class="labintrowrap">
         <div class="labintro">
             <h1><strong>지금 닥터로빈 연구소에서는...</strong></h1>
             <p>닥터로빈은 100% 국내자본력과 기술력으로 개발된 순수 국내 브랜드입니다.<br>
                 자체 식품연구소를 설립하여 건강에 대한 정직함을 추구합니다.</p>
         </div>
+    </div>
+    
         <!-- 비디오설정 -->
         <div class="video">
-            <iframe src="https://player.vimeo.com/video/68590141?dnt=1&app_id=122963" frameborder="0" width="800" height="664" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe class="ivideo" src="https://player.vimeo.com/video/68590141?dnt=1&app_id=122963" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             <!-- https://player.vimeo.com/video/68590141?dnt=1&app_id=122963 동영상 -->
         </div>
-    </div>
-
+   
 
     <!-- 영역 -->
     <div class="invention">
@@ -78,7 +100,7 @@
             <div>
                 <h1>자가 공장시스템</h1>
                 <h5 class="m5">닥터로빈은 식재료부터 직접 만들고 준비합니다.<br> 
-                    닥터로빈만의 차별화된 원료공급을 위해 설립된 자체 식품 공장은 <br>s
+                    닥터로빈만의 차별화된 원료공급을 위해 설립된 자체 식품 공장은 <br>
                     FDA 인증 공장시설입니다. <br>
                     닥터로빈의 정직하고 건강한 음식은 이곳에서 시작합니다.</h5>
             </div>
@@ -89,10 +111,7 @@
                     – 무설탕 소스류 : 토마토 소스, 크림소스, 샌드위치 소스 등<br>
                     – 무설탕 파우더류 : 천연재료만을 이용한 음식 첨가물 파우더</h5>
             </div>
-            
         </div>
-
-        
         <div class="inv2">
             <div>
                 <div>
@@ -102,9 +121,7 @@
                         식품 자가품질검사기관에 의뢰하여 객관적 데이터로<br>
                         검사결과를 통보 받고 있습니다.</h5>
                 </div>
-                
             </div>
-
             <div>
                 <h1 class="mt">연구 영역</h1>
                 <h5 class="m5">재료부터 요리 방법까지 다양한 분야를 연구하고 있습니다.<br>
@@ -121,21 +138,22 @@
 
     <!-- 영역 -->
     <div class="stevia">
-        <div>
+        <div class="ste">
             <img src="./images/lab1.png" alt="" width="360px" height="320px">
             <h2>설탕 대신 천연 스테비아 잎 추출물을<br>
                 사용한 ‘무설탕 시럽’</h2>
             <p><strong>스테비아는 0kcal임에도 불구하고 설탕이나<br>
                 자일리톨보다 높은 단맛을 지님</strong></p>
         </div>
-        <div>
+        <div class="ste">
             <img src="./images/lab2.png" alt="" width="360px" height="320px">
             <h2>생크림 버터 등 동물성 지방이 없는<br>
                 건강한 ‘콩 크림 소스’</h2>
             <p><strong>100% 국내산 콩을 사용하여 건강하고 담백한 레시피 개발</strong></p>
         </div>
-        
     </div>
+
+    
 
 
 
@@ -168,12 +186,13 @@
         </div>
     </div>
 
-    <footer class="footer"> 
-        <div class="footerimg">
+    <!-- 푸터 -->
+    <footer class="footer1"> 
+        <div class="footer11">
             <div>
                 <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/drrobbin-footer-logo.png" alt="">
             </div>
-            <div>
+            <div class="footerimg1">
                 <a href="https://www.instagram.com/accounts/login/?next=/drrobbin_korea/" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01.png" alt=""></a>
                 <a href="https://www.facebook.com/Dr.Robbin" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01-1.png" alt=""></a>
                 <a href="https://pf.kakao.com/_ArCxjxd" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/footer_kakao-icon.png" alt=""></a>
@@ -183,10 +202,57 @@
             <p>(주)닥터로빈 | 대표자: 송경석 |  사업자등록번호 211-87-73725 |  통신판매업신고번호 2019-서울강서-0910 | 서울 강서구 공항대로 396<br>
                 Tel: 02)2693-3100 | Fax: 02)2693-0335  | 개인정보처리방침 |  ⓒ 2017 DR.ROBBIN. ALL RIGHT RESERVED</p>
         </div>
-
     </footer>
-    
 
+    <footer class="footer2">
+        <div class="fi">
+            <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/drrobbin-footer-logo.png" alt="">
+        </div>
+
+        <div>
+            <p>(주)닥터로빈 | 대표자: 송경석 |  사업자등록번호 211-87-73725 |  통신판매업신고번호 2019-서울강서-0910 | 서울 강서구 공항대로 396<br>
+                Tel: 02)2693-3100 | Fax: 02)2693-0335  | 개인정보처리방침 |  ⓒ 2017 DR.ROBBIN. ALL RIGHT RESERVED</p>
+        </div>
+        
+        <div class="footerimg2">
+            <a href="https://www.instagram.com/accounts/login/?next=/drrobbin_korea/" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01.png" alt=""></a>
+            <a href="https://www.facebook.com/Dr.Robbin" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01-1.png" alt=""></a>
+            <a href="https://pf.kakao.com/_ArCxjxd" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/footer_kakao-icon.png" alt=""></a>
+        </div>
+    </footer>
+
+    <div class="overlap" id="myNav">
+        <header class="navheader">
+            <div class="navv">
+                <div>
+                   <a href="./main.html"><h5>DR.Robbin ▼</h5></a> 
+                    
+                </div>
+                
+                <div id="wrap2" onclick="ham2()">
+                    <div class="line2"></div>
+                    <div class="line2"></div>
+                    <div class="line2"></div>
+                </div>
+            </div>
+            <a href="./about.html"><p>About</p></a>
+            <a href="./lab.html"><p>Lab</p></a>
+            <a href=""><h5>MENU ▼</h5></a>
+            <a href=""><p>New Menu</p></a>
+            <a href=""><p>Appetizer</p></a>
+            <a href=""><p>Pizza</p></a>
+            <a href=""><p>Pasta</p></a>
+            <a href=""><p>Rice</p></a>
+            <a href=""><p>Kids</p></a>
+            <a href=""><p>Special</p></a>
+            <a href=""><p>Beverage</p></a>
+            <a href=""><p>Gelato</p></a>
+            <a href=""><h5>STORE</h5></a>
+            <a href=""><h5>EVENT</h5></a>
+            <a href=""><h5>RECRUIT</h5></a>
+
+        </header>
+    </div>
     
 </body>
 </html>
