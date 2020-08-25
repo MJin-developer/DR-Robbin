@@ -22,8 +22,16 @@
         #page{
             width: 95%;
             margin-left: auto; margin-right: auto;
+            opacity: 1;
+	        animation-name: fadeInOpacity;
+	        animation-iteration-count: 1;
+	        animation-timing-function: ease-in;
+	        animation-duration: 0.3s;
         }
-        
+        @keyframes fadeInOpacity {
+	        0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
         .row{
             display: flex;
             justify-content: flex-start;
@@ -52,8 +60,8 @@
             margin-top: 40px;
         }
         .card a{
-            font-size: 0.8em;
-            letter-spacing: 1.5px;
+            font-size: 0.7em;
+            letter-spacing: 2px;
         }
     </style>
 </head>
