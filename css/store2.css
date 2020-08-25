@@ -94,6 +94,16 @@ h5{
     font-size: 12px;
 }
 
+.button2{
+    display: inline;
+    width: 45%;
+    text-align: center;
+    margin-left: 13px;
+    margin-right: 13px;
+    padding: 13px;
+    font-size: 12px;
+}
+
 #b1{
     border: 3px solid #005f00;
 }
