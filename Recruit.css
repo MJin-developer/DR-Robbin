@@ -167,25 +167,38 @@
 
 
 
+
+
 #contentsWrapper{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    margin: 15px;
-    padding-left: 30px;
+    width: 60%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-@media(min-width:800px){
+@media(max-width:800px){
     #contentsWrapper{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        width: 100%;
+        
     }
+
+    #contentsWrapper div{
+        width: 80%;
+    }
+    .list{
+        padding-left: 50px;
+        
+    }
+    
 }
 
-
-
 #content1{
-    width: 400px;
+    width: 30%;
     height: 270px;
     border-width: 3px;
     background-color: #eeeeee;
@@ -194,7 +207,7 @@
 }
 
 #content2{
-    width: 400px;
+    width: 30%;
     height: 270px;
     border-width: 3px;
     background-color: #eeeeee;
@@ -202,7 +215,7 @@
     margin: 10px;
 }
 #content3{
-    width: 400px;
+    width: 30%;
     height: 270px;
     border-width: 3px;
     background-color: #eeeeee;
@@ -220,7 +233,7 @@
 .list{
     margin: 30px;
     margin-right: 30px;
-    border: 1px solid red;
+    
 }
 
 
@@ -256,8 +269,8 @@
 }
 #fieldset{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;   
+    margin: 35px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -265,10 +278,14 @@
 }
 
 @media(min-width:800px){
-    #fieldset{    
-        border: 10px solid red;
+    #fieldset{
         display: flex;
-        
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px;
     }
 }
 
@@ -281,9 +298,18 @@
 }
 #document:hover{
     cursor: pointer;
-    background-color: #ccee21;
+    background-color: green;
+    transition: all 0.5s;
+    border: 2px solid green ;
+    color: #ffffff;
 }
 
+#document{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+/* 내일 할 일 margin top , margin-left  */
 
 
