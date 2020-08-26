@@ -9,7 +9,6 @@ body{
 
     .navbar{
 
-        width: 60%;
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -32,6 +31,11 @@ body{
     .navbar #nt{
         color: black;
     }
+
+    .navbar a,
+    .navbar h3{
+               padding: 0 20px;
+              }
 
 .card{
     border: none !important; 
@@ -67,21 +71,28 @@ body{
     margin-top: 0px;
 }
 
+
+.ht{
+    border-bottom: 1px solid black;
+}
+
 .ht #hdtext{
     padding-top: 150px;
-    font-size: 50px;
+    font-size: 43px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Nanum Myeongjo', serif;
-
+    text-align: center;
+   
+    
 }
 
 .ht #hdtext2{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px;
 }
 
@@ -97,16 +108,10 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    margin-bottom: 30px;
 }
 
-.ht #line{
-   margin-left: 250px;
-   margin-right: 250px;
-   margin-top: 50px;
 
-   border : 0.1px solid black;
-
-}
 
 .card #id{
     margin: 0 auto;
@@ -147,14 +152,12 @@ body{
 
 
 
-
-
-.row{
-    padding: 20px 300px 20px 300px;
+.container img{
+    display: flex;
+    margin-left: auto; 
+    margin-right: auto;
+    
 }
-
-
-
 
 
 

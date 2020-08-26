@@ -8,8 +8,6 @@ body{
     }
 
     .navbar{
-
-        width: 60%;
         display: flex;
         margin-left: auto;
         margin-right: auto;
@@ -29,6 +27,13 @@ body{
         color: grey;
     }
 
+   
+
+    .navbar a,
+    .navbar h3{
+        padding : 0 20px
+    }
+
     .navbar #nt{
         color: black;
     }
@@ -38,6 +43,7 @@ body{
     border: none !important; 
     margin : 0 auto;
     text-align: center;
+    
     
 }
 
@@ -52,7 +58,6 @@ body{
     font-family: 'Nanum Myeongjo', serif;
     color: grey;
     font-size: 15px;
-   
 }
 
 .card p{
@@ -63,51 +68,15 @@ body{
     margin: 0 auto;
 }
 
-.card #fire{
-    margin: 0 auto;
-}
-
 .card #drpi{
     margin-top: 0px;
 }
 
-.ht #hdtext{
-    padding-top: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Nanum Myeongjo', serif;
 
-}
-
-.ht #hdtext2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    padding: 20px;
-}
-
-.ht #line{
-   margin-left: 250px;
-   margin-right: 250px;
-
-   border : 0.1px solid black;
-
-}
-
-.card #id{
-    margin: 0 auto;
-}
-
-
-.row{
-    padding: 20px 300px 20px 300px;
-}
 
 .header{
     width: 100%;
-    background: url(../img/Rib.jpg);
+    background: url(../img/Spb.jpg);
     background-position: center;
 }
 
@@ -137,8 +106,9 @@ body{
     
 }
 
-
-
+.row{
+    margin-top: 50px;
+}
 
 
 

@@ -7,7 +7,6 @@
 
         .navbar{
 
-            width: 60%;
             display: flex;
             margin-left: auto;
             margin-right: auto;
@@ -20,6 +19,11 @@
             margin : auto;
             font-size: 20px;
             color: grey;   
+        }
+
+        .navbar a,
+        .navbar h3{
+            padding: 0 20px;
         }
 
         .navbar *:hover{
@@ -65,6 +69,15 @@
     padding-top: 30px;
     padding-bottom: 150px;
     
+}
+
+
+.container img{
+    display: flex;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 
 
