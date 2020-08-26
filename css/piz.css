@@ -56,6 +56,7 @@ body{
     font-family: 'Nanum Myeongjo', serif;
     color: grey;
     font-size: 15px;
+    margin-top: -7px;
 }
 
 .card p{
