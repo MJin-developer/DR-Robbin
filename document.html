@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/document.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBBrpqIO-fHprqCB-HkYgY4kv1PXGY-YYw",
+          authDomain: "drrobbin-1a312.firebaseapp.com",
+          databaseURL: "https://drrobbin-1a312.firebaseio.com",
+          projectId: "drrobbin-1a312",
+          storageBucket: "drrobbin-1a312.appspot.com",
+          messagingSenderId: "332544682467",
+          appId: "1:332544682467:web:f56adf1368de4bfe25d8d6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
 </head>
 <body>
     <div id="imgbox">
@@ -22,9 +38,7 @@
 
     </div>
 
-    <div id="listbox">
-        
-    </div>
+    <div id="listbox"></div>
 
 </body>
 </html>
