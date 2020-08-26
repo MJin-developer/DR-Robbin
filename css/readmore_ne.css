@@ -12,6 +12,7 @@
     align-items: center;
 }
 #titlearea{
+    margin-top: 70px;
     width: 60%;
     max-width: 1000px;
     min-width: 350px;
@@ -31,11 +32,11 @@
     margin-top: 10px;
     border: 0.5px dotted gainsboro;
 }
-#img{
-    margin-top: 20px;
-    max-width: 600px;
+#img{ margin-top: 20px; }
+#img img{ 
+    border: 0.1px solid rgb(219, 219, 219);
+    max-width: 660px;
 }
-#img img{ border: 0.1px solid rgb(219, 219, 219); }
 #img p{
     font-size: 14px;
     margin-bottom: 8px;

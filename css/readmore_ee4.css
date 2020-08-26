@@ -12,6 +12,7 @@
     align-items: center;
 }
 #titlearea{
+    margin-top: 70px;
     width: 60%;
     max-width: 1000px;
     min-width: 350px;
@@ -35,7 +36,7 @@
     width: 100%;
     max-width: 1000px;
     height: auto;
-    margin-top: 150px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
