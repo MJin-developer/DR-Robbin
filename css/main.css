@@ -12,6 +12,9 @@
 
         li{
             list-style: none;
+            margin: 0;
+        padding: 0;
+
         }
        
 /* 헤더 부분 스타일 지정*/
@@ -102,32 +105,38 @@
             left: 0;
             display: none;
         }
+        .sub1 li{
+            width: 100%;
+        }
         /* 호버 설정  */
         .menu li:hover .sub1{
             display: block;
-            border: 1px solid black;
-            margin-left: 30px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 100px;
-            padding-left: 20px;
+            border-top: 3px solid green;          
             background-color: white;
+            margin-left: 30px;
         }
         .sa{
-            margin-top: 10px;
+            width: 100%;
+            display: block;
             text-decoration: none;
+            margin-left: 15px;
+            margin-right: 120px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             font-family: 'Nanum Gothic';
+            font-weight: 700;
             color: black;
         }
+
+        .sa :hover{
+            color: green;
+        }
+
         .menu li:hover .sub2{
             display: block;
-            border: 1px solid black;
-            margin-left: 30px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 100px;
-            padding-left: 20px;
+            border-top: 3px solid green;
             background-color: white;
+            margin-left: 30px;
         }
 
         .sub2{
@@ -229,36 +238,7 @@
                 margin-left: 25px;
             }
 
-            #aa{
-                z-index: -222;
-                position: relative;
-                width: 100%;
-                height: 600px;
-            }
-            #bb{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
-            }
-            .bb{
-                z-index: 2;
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                color: white;
-                text-align: center;
-            }
-            /* .aa{
-                top: 40%;
-                left: auto;
-                right: auto;
-                position: absolute;
-                color: white;
-                text-align: center;
-            } */
-            
+           
 
             /* 콩 이야기 위치 지정 */
             .cream{
@@ -283,60 +263,34 @@
                 line-height: 30pt;
             }
 
-            
+            .food{
+                text-align: center;
+                margin-top: 200px;
+                margin-bottom: 100px;
+            }
 
             /* 사진 리스트 설정.... 위치  */
-            /* .mainmenu{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            #foodimg1{
-                float: left;
-            }
             
-            .mainmenu ul{   
-                height: 650px;
-            }
-
-            .mainmenu ul li{
-                display: inline;
-            } */
-
-            /* 글씨 설정 */
-            .foodt{
-                text-align: center;
-                margin-top: 150px;
-            }
-            .food .foodh1{
-                margin-top: 100px;
-                margin-bottom: 70px;
-                font-size: 3em;
-            }
-
-            /* 사진 테이블여역 */
             .foodwrap{
+                width: 80%; 
+                height: 100%px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 200px;
+            }
+            .ful{
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
-            .food{
-                width: 70%;
-                display: flex;
-                margin-top: 80px;
-                margin-bottom: 150px;
-            }
-            /* .tableimg{
-                display: flex;
-                width: 300px;
-                height: 500px;
+            .f2{
                 margin: 1px;
             }
-            .tableimg2{
-                width: 300px;
-                height: 250px;
+            .f3{
                 margin: 1px;
-            } */
+            }
+           
+      
 
 
 
@@ -546,6 +500,7 @@
             top: 0;
             left: 0;
             transition: 0.5;
+            overflow: scroll;
         }
 
         .navv{

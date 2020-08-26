@@ -12,6 +12,7 @@ body{
     li{
         list-style: none;
     }
+       
 /* 헤더 부분 스타일 지정*/
 .header{
     margin: 0px;
@@ -39,7 +40,8 @@ body{
 .ww1{
     display: none;
 }
-    
+        
+
         
 
 
@@ -99,32 +101,38 @@ body{
             left: 0;
             display: none;
         }
+        .sub1 li{
+            width: 100%;
+        }
         /* 호버 설정  */
         .menu li:hover .sub1{
             display: block;
-            border: 1px solid black;
-            margin-left: 30px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 100px;
-            padding-left: 20px;
+            border-top: 3px solid green;          
             background-color: white;
+            margin-left: 30px;
         }
         .sa{
-            margin-top: 10px;
+            width: 100%;
+            display: block;
             text-decoration: none;
+            margin-left: 15px;
+            margin-right: 120px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             font-family: 'Nanum Gothic';
+            font-weight: 700;
             color: black;
         }
+
+        .sa :hover{
+            color: green;
+        }
+
         .menu li:hover .sub2{
             display: block;
-            border: 1px solid black;
-            margin-left: 30px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 100px;
-            padding-left: 20px;
+            border-top: 3px solid green;
             background-color: white;
+            margin-left: 30px;
         }
 
         .sub2{
@@ -408,6 +416,7 @@ body{
             top: 0;
             left: 0;
             transition: 0.5;
+            overflow: scroll;
         }
 
         .navv{

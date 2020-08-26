@@ -1,17 +1,21 @@
  /* 기본... 설정 */
+ @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
  @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
- *{
-    margin: 0;
-    padding: 0;
-}
-body{
-    margin: 0px;
-    font-family: 'Nanum Myeongjo'
+    *{
+        margin: 0;
+        padding: 0;
     }
+    body{
+        margin: 0px;
+        font-family: 'Nanum Myeongjo'
+        }
 
-    li{
-        list-style: none;
-    }
+        li{
+            list-style: none;
+            margin: 0;
+        padding: 0;
+
+        }
        
 /* 헤더 부분 스타일 지정*/
 .header{
@@ -40,10 +44,6 @@ body{
 .ww1{
     display: none;
 }
-        
-
-        
-
 
     /* 반응형!! 브라우저 너비 1200xp이상 일때 반응 */
     @media(min-width: 1200px){
@@ -143,97 +143,92 @@ body{
         }
     } /*media*/
 
-    /* --------------------------- */
-    /* about이미지 넣기 */
-    .aboutMain{
-        display: flex;
-        background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/04/robbin-main-slider-modesty.jpg);
-        width: 100%;
-        height: 500px;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.5em;
-    }
-    /* 글씨 색 */
-    .amh1{ 
-        color: white;
-    }
-    /* 위아래 여백 설정 */
-    .aboutInfo{
-        margin-top: 200px;
-        margin-bottom: 200px;
-        text-align: center;
-    }   
-    .aboutInfo p{
-        margin-top: 20px;
-    }
+
+
+/* ---------------------------------- */
+#blank{
+    height: 180px;
+}
+.appwrap{
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+}
+
+.owner{
+    display: flex;
+    font-size: 0.9em;
+}
+
+#row{
+    width: 100%;
+    height: 1px;
+    border-top: 1px dotted gray;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#in{
+    margin-top: 40px;
+}
+#in1{
+    font-size: 0.9em;
+}
+
+#in2{
+    font-size: 0.9em;
+    color: gray;
+    margin-top: 5px;
+}
+
+.intro{
+    margin-top: 20px;
+    width: 100%;
+}
+.intro textarea{
+    width: 100%;
+}
+.name{
+    margin-top: 20px;
+}
+.name input{
+    width: 100%;
+    height: 35px;
+}
+.email{
+    margin-top: 20px;
+}
+.email input{
+    width: 100%;
+    height: 35px;
+}
+.submit{
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    background: black;
+    color: white;
+}
+.submit :hover{
+    background: green;
+}
+
+
+
+
+
+
+
+
+/* ----------------------------------- */
+
+
+
+
+
 
     
-/*  */
-    .aboutvision{
-        background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/04/main-slider-frypan-food.jpg);
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        padding-top: 300px;
-        padding-bottom: 300px;
-    }
-
-    .healthy{
-        width: 80%;
-        display: flex;   
-    }
-    .hh1{
-        font-size: 3em;
-    }
-    .hh4{
-        margin-top: 50px;
-        font-size: 1.5em;
-    }
-    .blank{
-        width: 400px;
-        height: 150px;
-        opacity: 0;
-    }
-
-    .vision{
-        display: flex;
-        flex-direction: column;
-        width: 85%;
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-
-    .v1 h2{
-        margin-bottom: 20px;
-        margin-top: 50px;
-        }
-        .v1 p{
-            line-height: 20px;
-        }
-
-    @media(min-width:800px){
-        .vision{
-            display: flex;
-            flex-direction: row;
-            width: 85%;
-            justify-content: space-around;
-            align-items: flex-start;
-        }
-        .v1 h2{
-        margin-bottom: 30px;
-        }
-        .v1 p{
-            line-height: 25px;
-        }
-    }
-
-
-
             /* 푸터 */
             .footer1{
                 display: none;
@@ -271,9 +266,8 @@ body{
         }     
     } /*반응형*/
 
-
-
     
+
         /* 햄버거 메뉴 */
         #wrap{
             width: 20px;
@@ -346,8 +340,7 @@ body{
             width: 100%;
             text-decoration: none;
             color: white;
-            margin: 10px;
-            font-size: 1.5em;
+            margin: 5px;
         }
         .navheader a:hover{
             color: green;
