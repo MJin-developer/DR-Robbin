@@ -5,67 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-    *{
-        width: 100%;
-        margin: 0px auto;
-    }
-    #mainimg{
-        margin-top: 200px;
-        width: 60%;
-        max-width: 660px;
-        min-width: 340px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #titlearea{
-        width: 60%;
-        max-width: 1000px;
-        min-width: 350px;
-    }
-    #title{ font-size: 24px; }
-    #line{
-        width: 100%;
-        margin-top: 15px;
-        border: 0.5px dotted gainsboro;
-    }
-    #insta{
-        width: 100%;
-        max-width: 660px;
-        height: 500px;
-        margin-top: 20px;
-        border: 1px solid gainsboro;
-    }
-    #commentarea{
-        margin-top: 50px;
-        min-width: 360px;
-        width: 60%;
-    }
-    #p1{ font-size: 14px; }
-    #p2{
-        margin-top: 10px;
-        font-size: 10px;
-        color: grey;
-    }
-    .comment{
-        margin-top: 32px;
-        margin-bottom: 5px;
-        font-size: 12px;
-        color: dimgray;
-    }
-    .input{
-        border: 0.5px solid gainsboro;
-        padding: 12px;
-    }
-    .input:focus{ outline: none; }
-    #cb{ margin-top: 30px; }
-    label{
-        font-size: 12px;
-        color: dimgray;
-    }
-    
-    </style>
+    <link href="./css/readmore_ne.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
@@ -75,15 +15,23 @@
         <div id="page">
             <div id="titlearea">
                 <p id="title">설문조사 참여 이벤트 6월 당첨자 발표</p>
+                <div id="miniline">
+                    <img src="./img/ne10_1.PNG" alt="" class="miniimg">
+                    <img src="./img/ne10_2.PNG" alt="" class="miniimg">
+                </div>
                 <div id="line"></div>
-                <iframe id="insta" src="" frameborder="0"></iframe>
+                <h4>자세한 내용은 인스타그램을 통해 확인하세요!</h4>
+                <div id="img">
+                    <p>[ 닥터로빈 공식 인스타그램 계정 (클릭 시 이동) ]</p>
+                    <a href="https://www.instagram.com/drrobbin_korea/"><img src="./img/instagram.PNG" alt=""></a>
+                </div>
             </div>
             <div id="commentarea">
                 <p id="p1">댓글 남기기</p>
                 <p id="p2"><em>이메일은 공개되지 않습니다. 필수 입력창은 *로 표시되어 있습니다.</em></p>
                 <form action="">
                     <p class="comment">댓글</p>
-                    <input type="text" class="input">
+                    <textarea id="comment" class="input"></textarea>
                     <p class="comment">이름 *</p>
                     <input type="text" class="input">
                     <p class="comment">이메일 *</p>
@@ -91,6 +39,7 @@
                     <p class="comment">웹사이트</p>
                     <input type="url" class="input">
                     <p><label for=""><input type="checkbox" style="width: 25px;" id="cb">나중을 위해 이름, 이메일주소, 웹사이트 주소를 이 브라우저에 저장.</label></p>
+                    <input type="submit" id="submit" value="댓글 작성">
                 </form>
             </div>
         </div>

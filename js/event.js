@@ -4,6 +4,7 @@ function onload(){
     var ev=document.getElementById('iframe');
     ev.style.transition="opacity 1s";
     ev.style.opacity="1.0";
+    ev.src="./nowEvent.html";
 }
 function nowEvent(){
     var ev=document.getElementById('iframe');
