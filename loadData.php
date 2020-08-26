@@ -11,9 +11,9 @@
 
     for($i=0; $i<$app_num; $i++){
         $app=mysqli_fetch_array($result,MYSQLI_ASSOC);
-        echo $app['no']."<br>";
+        echo $app['no'];
+        echo $app['name'];
+        echo $app['email'];
+        echo $app['introduce'];
     }
-    // $person=json.encode($app);
-
-    // echo $person
 ?>

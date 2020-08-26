@@ -73,52 +73,7 @@
         </div>
     </div>
 </header>
-<!-- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script>
-            //JQuery 라이브러리를 이용한 AJAX기술
-            $(document).ready(function(){
 
-                $('#b1').click(function(){
-                    var name=$('#in1').val();
-                    var email="aaa@aaa.com";
-
-                    $.ajax({
-                        type:"GET",
-                        url:"./getTest.php?name="+name+"&email="+email,
-                        success:function(data){
-                            $('#hh').html(data);
-                        },  
-                        error:function(error){
-                            $('#hh').html(error.responseText);
-                        }
-                    });
-                });
-
-                $('#b2').click(function (){
-                    var name=$('#in1').val();
-                    var email="bbb@bbb.com";
-
-                    var data="name="+name+"&email="+email;
-
-                    $.ajax({
-                        type:"POST",
-                        url:"./postTest.php",
-                        data: data,
-                        success:function(data){
-                            $('#hh').html(data);
-                        }
-
-                    })
-                });
-            });
-
-        
-        </script>
- -->
-
-
-<!--  -->
 <div id="blank">
 
 </div>
@@ -162,8 +117,8 @@
             <input class="submit" type="submit" value="작성완료">
         </form>
 
-        <form action="">
-            <button></button>
+        <form action="./loadData.php" method="POST">
+           <input type="submit">
         </form>
         <!-- <textarea id="ta" cols="30" rows="10"></textarea> -->
     </div>
