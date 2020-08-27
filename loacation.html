@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>위치정보</title>
+
+        <link rel="stylesheet" href="./css/loacation.css">
+
+        <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU5OZ5JYxo-_MzWpqJIXCM4-2Bm1hooVc&callback=initMap"></script>
+        <script>
+
+            function mapload(){
+                var e= document.getElementById('map');
+                var dr= new google.maps.LatLng(37.5914444, 126.9671949);
+                var opts={
+                    center: dr,
+                    zoom: 14
+                }
+                var map = new google.maps.Map(e, opts);
+
+
+                var marker=new google.maps.Marker({
+                    position:dr,
+                    title:"닥터로빈"
+                });
+
+                marker.setMap(map);
+
+            
+                
+            var drs=[
+                    ["강서점",37.5914444,126.9671949],
+                    ["공덕점",37.5914496,127.0022144],
+                    ["광화문점",37.5710639,126.9093033],
+                    ["고척점",37.4955947,126.8615883],
+                    ["목동점",37.5257762,126.8659498],
+                    ["반포점",37.5018951,126.9400192]
+                ];
+
+                for(var i=0; i<drs.length; i++){
+                    var title= drs[i][0];
+                    var position= new google.maps.LatLng(drs[i][1],drs[i][2]);
+                    var marker=new google.maps.Marker({
+                        position: position,
+                        title: title,
+                        map: map
+                    });
+                    marker.addListener('click',function(){
+                        alert(this.getTitle());
+                    })
+                }
+
+            }
+        </script>
+
+        
+    </head>
+    
+    <body onload="mapload()">
+        
+ <!-- 헤더역역 -->
+<header class="header"> 
+    <div class="headerwrap">
+    <div class="ww1">
+        <div class="logo">
+            <!-- 로고 이미지 = 클릭시 메인 이미지 이동 -->
+            <a href="./Main.html">
+                <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/dr-robbin-logo-green-150.png" alt="dr-robbin">
+            </a>
+        </div>
+
+        <!-- 상단 메뉴 바 -->
+        <div class="navDiv">
+            <nav class="nav">
+                <ul class="menu">
+                    <li id="navdr" class="mli"><a class="ma" href="./main.html">DR.Robbin ▼</a>
+                        <ul class="sub1">
+                          <li><a class="sa" href="./about.html">About</a></li>
+                            <li><a class="sa" href="./lab.html">Lab</a></li>
+                        </ul> 
+                        <!-- ★★★위치 설정.. -->
+                        <!-- 줄어들시 햄버거메뉴로 변경 -->
+                    </li>
+                    <li class="mli"><a class="ma" href="./menu.html">MENU ▼</a>
+                        <ul class="sub2">
+                            <li><a href="" class="sa">NewMenu</a></li>
+                            <li><a href="" class="sa">Appetizer</a></li>
+                            <li><a href="" class="sa">Pizza</a></li>
+                            <li><a href="" class="sa">Pasta</a></li>
+                            <li><a href="" class="sa">Rice</a></li>
+                            <li><a href="" class="sa">Kids</a></li>
+                            <li><a href="" class="sa">Special</a></li>
+                            <li><a href="" class="sa">Beverage</a></li>
+                            <li><a href="" class="sa">Gelato</a></li>
+                        </ul>
+                    </li>
+                    <li class="mli"><a class="ma" href="./store/html">STORE</a></li>
+                    <li class="mli"><a class="ma" href="./event.html">EVENT</a></li>
+                    <li class="mli"><a class="ma" href="./recruit">RECRUIT</a></li>
+                    <li class="mli"><a class="ma" href="./document.html">DOCUMENT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>  <!-- ww1 -->
+   
+
+        <div class="ww2">
+            <div class="logo">
+                <!-- 로고 이미지 = 클릭시 메인 이미지 이동 -->
+                <a href="./Main.html">
+                    <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/dr-robbin-logo-green-150.png" alt="dr-robbin">
+                </a>
+            </div>
+            <!-- 햄버거 메뉴 -->
+            <div id="wrap" onclick="ham()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+        <!-- 지도 -->
+        <div class="locationwrap">
+            <h1 id="hh1">닥터로빈 지점</h1>
+          
+            <div id="mapwrap">
+                <div id="map">
+                    
+                </div>
+            </div>
+
+            <div class="line"></div>
+            <div id="park">
+                <p>[주차안내]</p>
+                <p>매장 이용 시, 2시간 무료 주차 가능</p>
+                <p>(초과 시, 10분당 1,000원</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div id="call">
+                <p>02-2251-****</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="open">
+                <p>[영업시간]</p><br>
+
+                <p>월~금 10 : 00 – 21 : 30</p>
+                <p>토~일 11 : 00 – 21 : 30</p>
+                <p>토~일 11 : 00 – 21 : 30</p>
+                <p>* 식사주문은 마감시간 30분전까지 가능</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div>
+                <h3 class="hh3">메뉴</h3>
+            </div>
+            <div class="menuwrap">
+                <div class="menu">
+                    <p>통단호박스프</p>
+                    <p>18,000</p>
+                </div>
+                <div class="menu">
+                    <p>매콤버섯크림파스타</p>
+                    <p>17,500</p>
+                </div>
+                <div class="menu">
+                    <p>갈릭딥소스피자</p>
+                    <p>16,500</p>
+                </div>
+                <div class="menu">
+                    <p>수제햄버거스테이크파스타(크림/토마토)</p>
+                    <p>19,500</p>
+                </div>
+                <div class="menu">
+                    <p>트러플버섯크림리조또</p>
+                    <p>16,500</p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div>
+                <h3 class="hh3">편의 시설</h3>
+            </div>
+            <div class="convenient">
+                <div>
+                    <img src="" alt="">
+                    <p>주차가능</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>단체석</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>베이비체어</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <p>콜키지가능</p>
+                </div>
+            </div>
+        
+        </div>
+
+
+<!-- 푸터 -->
+        <footer class="footer1"> 
+                    <div class="footer11">
+                        <div>
+                            <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/drrobbin-footer-logo.png" alt="">
+                        </div>
+                        <div class="footerimg1">
+                            <a href="https://www.instagram.com/accounts/login/?next=/drrobbin_korea/" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01.png" alt=""></a>
+                            <a href="https://www.facebook.com/Dr.Robbin" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01-1.png" alt=""></a>
+                            <a href="https://pf.kakao.com/_ArCxjxd" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/footer_kakao-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div>
+                        <p>(주)닥터로빈 | 대표자: 송경석 |  사업자등록번호 211-87-73725 |  통신판매업신고번호 2019-서울강서-0910 | 서울 강서구 공항대로 396<br>
+                            Tel: 02)2693-3100 | Fax: 02)2693-0335  | 개인정보처리방침 |  ⓒ 2017 DR.ROBBIN. ALL RIGHT RESERVED</p>
+                    </div>
+                </footer>
+
+                <footer class="footer2">
+                    <div class="fi">
+                        <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/drrobbin-footer-logo.png" alt="">
+                    </div>
+
+                    <div>
+                        <p>(주)닥터로빈 | 대표자: 송경석 |  사업자등록번호 211-87-73725 |  통신판매업신고번호 2019-서울강서-0910 | 서울 강서구 공항대로 396<br>
+                            Tel: 02)2693-3100 | Fax: 02)2693-0335  | 개인정보처리방침 |  ⓒ 2017 DR.ROBBIN. ALL RIGHT RESERVED</p>
+                    </div>
+                    
+                    <div class="footerimg2">
+                        <a href="https://www.instagram.com/accounts/login/?next=/drrobbin_korea/" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01.png" alt=""></a>
+                        <a href="https://www.facebook.com/Dr.Robbin" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01-1.png" alt=""></a>
+                        <a href="https://pf.kakao.com/_ArCxjxd" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/footer_kakao-icon.png" alt=""></a>
+                    </div>
+                </footer>
+            
+
+            <div class="overlap" id="myNav">
+                <header class="navheader">
+                    <div class="navv">
+                        <div>
+                           <a href="./main.html"><h5>DR.Robbin ▼</h5></a> 
+                            
+                        </div>
+                        
+                        <div id="wrap2" onclick="ham2()">
+                            <div class="line2"></div>
+                            <div class="line2"></div>
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+                    <a href="./about.html"><p>About</p></a>
+                    <a href="./lab.html"><p>Lab</p></a>
+                    <a href=""><h5>MENU ▼</h5></a>
+                    <a href=""><p>New Menu</p></a>
+                    <a href=""><p>Appetizer</p></a>
+                    <a href=""><p>Pizza</p></a>
+                    <a href=""><p>Pasta</p></a>
+                    <a href=""><p>Rice</p></a>
+                    <a href=""><p>Kids</p></a>
+                    <a href=""><p>Special</p></a>
+                    <a href=""><p>Beverage</p></a>
+                    <a href=""><p>Gelato</p></a>
+                    <a href=""><h5>STORE</h5></a>
+                    <a href=""><h5>EVENT</h5></a>
+                    <a href=""><h5>RECRUIT</h5></a>
+                </header>
+            </div>
+    </body>
+</html>

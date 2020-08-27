@@ -1,0 +1,555 @@
+ /* 기본... 설정 */
+ @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+ @import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0px;
+        font-family: 'Nanum Myeongjo'
+        }
+
+        li{
+            list-style: none;
+            margin: 0;
+        padding: 0;
+
+        }
+       
+/* 헤더 부분 스타일 지정*/
+.header{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+    height: 90px; /*★★★네비 지정후 높이 변경해야함 100*/
+    position: fixed; /*상단 고정*/
+    display: flex;
+    justify-content: center;
+}   
+.headerwrap{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ww2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 1200px전에 안보임 */
+.ww1{
+    display: none;
+}
+        
+
+        
+
+
+    /* 반응형!! 브라우저 너비 1200xp이상 일때 반응 */
+    @media(min-width: 1200px){
+        .header{
+            margin: 0px;
+            padding: 0px;
+            background-color: white;
+            width: 100%;
+            height: 90px; /*★★★네비 지정후 높이 변경해야함 100*/
+            position: fixed; /*상단 고정*/
+            display: flex;
+            justify-content: center;
+        }   
+        .headerwrap{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ww1{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ww2{
+            display: none;
+        }
+
+        .menu{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        /* 최상위 메뉴 수평 */
+        .menu .mli{
+            float: left;
+            padding: 0;
+            position: relative;
+        }
+
+        /* 앵커요소 설정 */
+        .menu li .ma{
+            text-decoration: none;
+            color: black;
+            margin-left: 40px;
+            font-family: 'Nanum Myeongjo';
+            font-weight: 800;
+        }
+        /* 서브메뉴 나와도 위치고정 및 설정 */
+        .sub1{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+        .sub1 li{
+            width: 100%;
+        }
+        /* 호버 설정  */
+        .menu li:hover .sub1{
+            display: block;
+            border-top: 3px solid green;          
+            background-color: white;
+            margin-left: 30px;
+        }
+        .sa{
+            width: 100%;
+            display: block;
+            text-decoration: none;
+            margin-left: 15px;
+            margin-right: 120px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-family: 'Nanum Gothic';
+            font-weight: 700;
+            color: black;
+        }
+
+        .sa :hover{
+            color: green;
+        }
+
+        .menu li:hover .sub2{
+            display: block;
+            border-top: 3px solid green;
+            background-color: white;
+            margin-left: 30px;
+        }
+
+        .sub2{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+    } /*media*/
+
+        
+        
+
+        @media(min-width:800px){
+            .main{
+                /* position: absolute; */
+                z-index: -1;
+                display: flex;
+            }
+            .main .mainh1{
+                font-size: 2.5em;
+                font-family: 'Nanum Gothic';
+            }
+            .main .mainh4{
+                line-height: 3;
+                font-family: 'Nanum Gothic';
+                font-weight: 550;
+            }
+        }
+
+            /* 메인 사진  */
+            .main{
+                /* position: absolute; */
+                z-index: -1;
+                display: flex;
+            }
+            .main .mainh1{
+                font-family: 'Nanum Gothic';
+            }
+            .main .mainh4{
+                line-height: 3;
+                font-family: 'Nanum Gothic';
+                font-weight: 550;
+                font-size: 0.3em;
+            }
+            /* .logom{
+                width: 100px;
+                height: 100px;
+            } */
+     
+           
+           /* 부트스트랩 글씨 크기지정 */
+            .carousel-inner{
+                font-size: 3em;
+            }
+            #honest{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            #sincerely{
+                display: flex;
+                flex-direction: column;
+            }
+            #modersty{
+                display: flex;
+                flex-direction: column;
+            }
+            
+
+            
+            /* 국내 설명 설정 */
+            /* 글씨체만 변경 */
+            .info{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-weight: 900;
+                margin-top: 100px;
+                margin-bottom: 30px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            
+            .infop{
+                line-height: 20pt;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 1.2em;
+                font-weight: 900;
+                justify-content: center;
+                margin-bottom: 150px;
+                margin-right: 25px;
+                margin-left: 25px;
+            }
+
+           
+
+            /* 콩 이야기 위치 지정 */
+            .cream{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #bean{
+                display: flex;
+                flex-direction: column;
+                background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/04/food-on-the-table2.jpg);
+                background-attachment:local;
+                width: 100%;
+                height: 600px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+            }
+            #bean .beanh5{
+                color: white;
+                line-height: 30pt;
+            }
+
+            .food{
+                text-align: center;
+                margin-top: 200px;
+                margin-bottom: 100px;
+            }
+
+            /* 사진 리스트 설정.... 위치  */
+            
+            .foodwrap{
+                width: 80%; 
+                height: 100%px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 200px;
+            }
+            .ful{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .f2{
+                margin: 1px;
+            }
+            .f3{
+                margin: 1px;
+            }
+           
+      
+
+
+
+            /* 스토어 영역 설정 */
+            .stores{
+                display: flex;
+                flex-direction: column;
+                background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/10/main-store-bg-1920.jpg);
+                width: 100%;
+                height: 600px;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                color: white;
+            }
+            .stores .storesh1{
+                margin: 40px;
+                
+            }
+            .stores a{
+                color: white;
+                border: 3px solid white;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                padding-right: 40px;
+                padding-left: 40px;
+                margin: 40px;
+            }
+            
+
+
+            /* 예약및 카톡연결*/
+            .BookandContact{
+                background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/06/book-your-table-wall.jpg);
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: 200px;
+                margin-bottom: 50px;
+                height: 100%;
+                padding-top: 150px;
+                color: white;
+            }
+
+            .BookandContact .book{
+                text-align: center;
+            }
+            .bookrap{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .book .bookh1{
+                margin-bottom: 80px;
+            }
+
+            .book a{
+                color: white;
+                border: 3px solid white;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                padding-right: 40px;
+                padding-left: 40px;
+                margin: 40px;
+            }
+            .kakao{
+                text-align: center;
+                margin-bottom: 100px;
+            }
+            .kakao .kakaoh1{
+                margin: 80px;
+            }
+            @media(min-width: 800px){
+                .BookandContact{
+                    background-image: url(http://www.drrobbin.com/wp-content/uploads/2019/06/book-your-table-wall.jpg);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    margin-top: 200px;
+                    margin-bottom: 50px;
+                    height: 800px;
+                    color: white;
+                }
+    
+                .BookandContact .book{
+                    text-align: center;
+                }
+                .bookrap{
+                    width: 60%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                .book .bookh1{
+                    margin-bottom: 80px;
+                }
+    
+                .book a{
+                    color: white;
+                    border: 3px solid white;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    padding-right: 40px;
+                    padding-left: 40px;
+                    margin: 40px;
+                }
+                .kakao{
+                    text-align: center;
+                    margin-bottom: 100px;
+                }
+                .kakao .kakaoh1{
+                    margin: 80px;
+                }
+
+            }
+
+
+            /* 푸터 */
+            .footer1{
+                display: none;
+            }
+            .footer2{
+                display: flex;
+                flex-direction: column;
+                margin: 60px;
+            }
+            .fi{
+                margin-bottom: 20px;
+            }
+            .footerimg2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 50px;
+            }
+
+            
+            /* 푸터  */
+    @media(min-width: 800px){
+        .footer2{
+            display: none;
+        }
+        
+        .footer1{
+            display: flex;
+            flex-direction: column;
+            margin: 60px;
+        }
+        .footer11{
+            display: flex;
+            justify-content: space-between;
+        }     
+    } /*반응형*/
+
+    
+
+
+    
+        /* 햄버거 메뉴 */
+        #wrap{
+            width: 20px;
+            height: 40px;
+            background: white;
+            justify-content: end;
+        }
+        #wrap:hover .line{
+            background: green;
+        }
+
+        .line{
+            background: black;
+            margin-top: 2px;
+            width: 100%;
+            height: 2px;
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        #wrap2{
+            width: 25px;
+            height: 40px;
+            justify-content: end;
+        }
+        #wrap2:hover .line2{
+            background: green;
+        }
+        .line2{
+            background: white;
+            margin-top: 2px;
+            width: 100%;
+            height: 2px;
+            position: relative;
+            border-radius: 8px;
+        }
+        
+        .overlap{
+            display: none;
+            width: 100%;
+            height: 100%;
+            background: black;
+            opacity: 90%;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            transition: 0.5;
+            overflow: scroll;
+        }
+
+        .navv{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .navheader{
+            display: flex;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content: space-between; 
+            width: 95%;
+            height: 90px;
+            color: white;
+            margin: 30px;
+        }
+        .navheader a{
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            color: white;
+            margin: 5px;
+        }
+        .navheader a:hover{
+            color: green;
+        }
+
+        .navheader a p{
+            margin-left: 15px;
+        }
+
+
+
+        /* 이미지 */
+        #time{
+            display: inline;
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            z-index: 998;
+        }
+        #cleanliness{
+            display: inline;
+            top: 30px;
+            left: 430px;
+            position: fixed;
+            z-index: 999;
+        }
+
+       
