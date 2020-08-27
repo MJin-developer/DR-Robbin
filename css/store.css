@@ -513,6 +513,10 @@ justify-content: space-between;
 }
 
 #wrap2{
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 25px;
     height: 40px;
     justify-content: end;

@@ -545,6 +545,7 @@ display: none;
         }
         
         .overlap{
+            
             display: none;
             width: 100%;
             height: 100%;
@@ -559,6 +560,7 @@ display: none;
         }
 
         .navv{
+            padding-bottom: 5px;
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -575,6 +577,7 @@ display: none;
             margin: 30px;
         }
         .navheader a{
+            padding-bottom: 30px;
             display: block;
             width: 100%;
             text-decoration: none;
