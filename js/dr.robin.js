@@ -9,3 +9,13 @@ function ham2(){
     document.getElementById('wrap').style.display='flex';
 }
 
+function doc(){
+    var pro;
+    var pw='2222';
+    pro=prompt("회원창입니다.\n비밀번호를 입력하세요",'');
+    if(pro==pw){
+        open('about:self').location.href="./document.html";
+    }else{
+        alert('비밀번호가 맞지 않습니다.');
+    }
+}
