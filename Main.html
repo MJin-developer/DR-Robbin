@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>닥터로빈main</title>
+
+        <!-- bootstrap 라이브러리 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/dr.robin.js"></script>
+    </head>
+    
+
+
+    <body>
+
+       
+
+
+ <!-- 헤더역역 -->
+<header class="header"> 
+    <div class="headerwrap">
+    <div class="ww1">
+        <div class="logo">
+            <!-- 로고 이미지 = 클릭시 메인 이미지 이동 -->
+            <a href="./Main.html">
+                <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/dr-robbin-logo-green-150.png" alt="dr-robbin">
+            </a>
+        </div>
+
+        <!-- 상단 메뉴 바 -->
+        <div class="navDiv">
+            <nav class="nav">
+                <ul class="menu">
+                    <li id="navdr" class="mli"><a class="ma" href="./main.html">DR.Robbin ▼</a>
+                        <ul class="sub1">
+                          <li><a class="sa" href="./about.html">About</a></li>
+                            <li><a class="sa" href="./lab.html">Lab</a></li>
+                        </ul> 
+                        <!-- ★★★위치 설정.. -->
+                        <!-- 줄어들시 햄버거메뉴로 변경 -->
+                    </li>
+                    <li class="mli"><a class="ma">MENU ▼</a>
+                        <ul class="sub2">
+                            <li><a href="./menu.html" class="sa">NewMenu</a></li>
+                            <li><a href="./ap.html" class="sa">Appetizer</a></li>
+                            <li><a href="./piz.html" class="sa">Pizza</a></li>
+                            <li><a href="./pas.html" class="sa">Pasta</a></li>
+                            <li><a href="./kid.html" class="sa">Rice</a></li>
+                            <li><a href="./kid.html" class="sa">Kids</a></li>
+                            <li><a href="./spacial.html" class="sa">Special</a></li>
+                            <li><a href="./bever.html" class="sa">Beverage</a></li>
+                            <li><a href="./getlato.html" class="sa">Gelato</a></li>
+                        </ul>
+                    </li>
+                    <li class="mli"><a class="ma" href="./store.html">STORE</a></li>
+                    <li class="mli"><a class="ma" href="./event.html">EVENT</a></li>
+                    <li class="mli"><a class="ma" href="./recruit.html">RECRUIT</a></li>
+                    <li class="mli"><a class="ma" href="" onclick="doc()">DOCUMENT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>  <!-- ww1 -->
+
+    
+   
+
+        <div class="ww2">
+            <div class="logo">
+                <!-- 로고 이미지 = 클릭시 메인 이미지 이동 -->
+                <a href="./Main.html">
+                    <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/dr-robbin-logo-green-150.png" alt="dr-robbin">
+                </a>
+            </div>
+            <!-- 햄버거 메뉴 -->
+            <div id="wrap" onclick="ham()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+            <!-- 메인 영역  -->
+
+            <div class="main">
+                <div id="mainImg" style="background-color: aqua; width: 100%; height: 100%; z-index: -1;"> 
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="http://www.drrobbin.com/wp-content/uploads/2019/04/main-slider-frypan-food.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div id="honest">
+                                    <img src="http://drrobin.cafe24.com/wp-content/uploads/2019/04/dr-robbin-slider-logo.png" alt="로고이미지" class="logom">                                
+                                    <h1 class="mainh1">HONEST</h1> 
+                                    <h4 class="mainh4">고객의 건강을 최선으로 몸에 이로운 재료만 사용합니다.</h3>
+                                </div>
+                            </div>
+                          </div>
+                          <div  class="carousel-item">
+                            <img src="http://www.drrobbin.com/wp-content/uploads/2019/04/robbin-main-slider-sincerely.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div id="sincerely"></div>
+                                    <img src="http://drrobin.cafe24.com/wp-content/uploads/2019/04/dr-robbin-slider-logo.png" alt="로고이미지" class="logom">                                
+                                    <h1 class="mainh1">SINCERELY</15>
+                                    <h4 class="mainh4">닥터로빈의 모든 직원은 원재료 섭외부터 조리까지 정성을 다합니다.</h3>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="http://www.drrobbin.com/wp-content/uploads/2019/04/robbin-main-slider-modesty.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <div id="modesty">
+                                    <img src="http://drrobin.cafe24.com/wp-content/uploads/2019/04/dr-robbin-slider-logo.png" alt="로고이미지" class="logom" >                                
+                                    <h1 class="mainh1">MODESTY</h1>
+                                    <h4 class="mainh4">고객의 의견에 귀기울이며 음식으로 행복을 전달하겠습니다.</h3>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                    
+
+                    <!-- 메인 역역 이미지들 -->
+                    <!-- http://www.drrobbin.com/wp-content/uploads/2019/04/main-slider-frypan-food.jpg
+                    http://www.drrobbin.com/wp-content/uploads/2019/04/robbin-main-slider-sincerely.jpg
+                    http://www.drrobbin.com/wp-content/uploads/2019/04/robbin-main-slider-modesty.jpg -->
+                
+
+                <!-- <div>
+                    <div class="main">  
+                        <img src="http://drrobin.cafe24.com/wp-content/uploads/2019/04/dr-robbin-slider-logo.png" alt="">
+                        <h1 id="mainh1">HONEST</h1>
+                        <h4 id="mainh4">고객의 건강을 최선으로 몸에 이로운 재료만 사용합니다.</h4>
+
+                        <div class="btns">
+                            <button onclick="imgch1"><img src="./images/btn.png" alt="" style="opacity: 0.1;"></button>
+                            <button onclick="imgch2"><img src="./images/btnb.png" alt=""></button>
+                            <button onclick="imgch3"><img src="./images/btnb.png" alt="" style="background-color: opacity: 0;"></button>
+                        </div>
+
+                    </div>
+                </div> -->
+
+                
+
+                <div class="info">
+                    <h1><strong>About Dr.Robbin</strong></h1>
+                </div>
+
+                <div class="infop">
+                    <p><strong>100% 순수 국내브랜드 닥터로빈<br>
+                            '우리의 먹거리', '우리의 건강'을 다른 사람에게 맡길 수 없었습니다.</strong></p>
+                    <p>  닥터로빈은 100% 국내 자본력과 기술력의 순수 국내브랜드 입니다.<br>
+                            자체 식품 연구소와 자동화 시스템 공장을 설립하여 건강에 대한 정직함을 추구합니다.<br>
+                            건강을 생각하는 우리의 철학은 국내 시장의 성공을 이끌며,미국, 중국, 홍콩, 일본, 호주의<br>
+                            상표권 등록으로 해외 역수출의 기회까지 만들어낸 핵심 가치입니다.</p>
+                </div>
+               
+                
+                <!-- 2번째  -->
+                <div class="cream">
+                    <div id="bean" >
+                        <h1><strong>Good in more than just taste.</strong></h1>
+
+                        <h5 class="beanh5">우리는 건강한 ‘콩 크림’소스를 사용합니다.<br>
+                            생크림, 버터 등 동물성 지방은 사용하지 않으며 100%국내산 콩으로 만든<br>
+                            신개념 건강 크림소스를 사용하여 맛은 물론 음식의 건강함을 추구합니다.</h5>
+                        </div>
+                    </div>
+
+                        <!-- http://www.drrobbin.com/wp-content/uploads/2019/04/food-on-the-table2.jpg -->
+                  
+            
+
+                <!-- 사진 리스트.. -->
+                <div class  ="food">
+                    <h1 class="foodh1"><strong>DR.ROBBIN HEALTHY FOOD</strong></h1>
+                </div>
+                    <div class="foodwrap">
+                        <div class="foodmenu">
+                            <ul class="ful">
+                                <li class="f1"><img src="http://www.drrobbin.com/wp-content/uploads/2019/12/Untitled-2.jpg" alt="" width="100%"></li>
+                               <div>
+                                    <li class="f2"><img src="http://www.drrobbin.com/wp-content/uploads/2019/10/Seafood-Pasta.jpg" alt=""  width="100%"></li>
+                                    <li class="f2"><img src="http://www.drrobbin.com/wp-content/uploads/2019/10/grid-ice-cream.jpg" alt=""  width="100%"></li>
+                                </div>
+                                <div>
+                                    <li class="f3"><img src="http://www.drrobbin.com/wp-content/uploads/2019/10/grid-pizza.jpg" alt=""  width="100%"></li>                                       
+                                    <li class="f3"><img src="http://www.drrobbin.com/wp-content/uploads/2019/10/grid-coffee.jpg" alt=""  width="100%"></li>                                                                   
+                                </div>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                
+                     <!-- http://www.drrobbin.com/wp-content/uploads/2019/12/Untitled-2.jpg 호박 -->
+                    <!-- http://www.drrobbin.com/wp-content/uploads/2019/10/grid-pizza.jpg 피자 -->
+                    <!-- http://www.drrobbin.com/wp-content/uploads/2019/10/Seafood-Pasta.jpg 짬뽕 -->
+                    <!-- http://www.drrobbin.com/wp-content/uploads/2019/10/grid-coffee.jpg 커피 -->
+                    <!-- http://www.drrobbin.com/wp-content/uploads/2019/10/grid-ice-cream.jpg 아이스크림 -->
+                
+
+
+
+                <!-- 3번째 -->
+                <div>
+                    <div class="stores">
+                        <h1 class="storesh1"><strong>Stores</strong></h1>
+                    
+                        <h4><strong>“정직의 원칙을 지키기 위하여 쉬운 길을 포기합니다”</strong></h4>
+                        <p><strong>닥터로빈 브랜드 철학을 유지하기 위해 본사가 100% 직접 운영하고 있습니다.<br>
+                            건강과 관련된 사소한 문제도 발생하지 않도록 본사에서 직접 꼼꼼하게 관리합니다.</strong></p>
+                        <!-- http://www.drrobbin.com/wp-content/uploads/2019/10/main-store-bg-1920.jpg 스토어 배경-->
+                        <a class="btn btn-link" href="./loacation.html">
+                            <strong>View Our Stores</strong></a>
+                    </div>
+                </div>
+
+                <div class="BookandContact">
+                    <div class="bookrap">
+                        <div class="book">
+                            <h1 class="bookh1"><strong>BOOK<br>YOUR TABLE</strong></h1>
+                            <h5><strong>매장 예약은 전화예약과<br>
+                                온라인 예약 모두 가능 합니다.<br>
+                                아래 링크를 통해 원하시는 매장에서<br>
+                                예약을 진행하실 수 있습니다.</strong></h5>
+                                <a style="text-decoration: none;" class="btn btn-link" href="./store.html">
+                                    <strong>예약하기</strong></a>
+                        </div>
+
+                        <div class="kakao">
+                            <h1 class="kakaoh1"><strong>CONTACT US</strong></h1>
+                            <h5><strong>TEL 02 2693 3100<br>
+                                FAX 02 2693 0335br<br>
+                                고객센터<br>
+                                ▼</strong></h5><br><br>
+                            <a href="http://pf.kakao.com/_ArCxjxd/chat" target="_blank">
+                                <img src="http://www.drrobbin.com/wp-content/uploads/2020/03/Untitled-1.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- http://www.drrobbin.com/wp-content/uploads/2019/06/book-your-table-wall.jpg  예약 카톡 -->
+                </div>
+
+
+                <footer class="footer1"> 
+                    <div class="footer11">
+                        <div>
+                            <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/drrobbin-footer-logo.png" alt="">
+                        </div>
+                        <div class="footerimg1">
+                            <a href="https://www.instagram.com/accounts/login/?next=/drrobbin_korea/" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01.png" alt=""></a>
+                            <a href="https://www.facebook.com/Dr.Robbin" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01-1.png" alt=""></a>
+                            <a href="https://pf.kakao.com/_ArCxjxd" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/footer_kakao-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div>
+                        <p>(주)닥터로빈 | 대표자: 송경석 |  사업자등록번호 211-87-73725 |  통신판매업신고번호 2019-서울강서-0910 | 서울 강서구 공항대로 396<br>
+                            Tel: 02)2693-3100 | Fax: 02)2693-0335  | 개인정보처리방침 |  ⓒ 2017 DR.ROBBIN. ALL RIGHT RESERVED</p>
+                    </div>
+                </footer>
+
+                <footer class="footer2">
+                    <div class="fi">
+                        <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/drrobbin-footer-logo.png" alt="">
+                    </div>
+
+                    <div>
+                        <p>(주)닥터로빈 | 대표자: 송경석 |  사업자등록번호 211-87-73725 |  통신판매업신고번호 2019-서울강서-0910 | 서울 강서구 공항대로 396<br>
+                            Tel: 02)2693-3100 | Fax: 02)2693-0335  | 개인정보처리방침 |  ⓒ 2017 DR.ROBBIN. ALL RIGHT RESERVED</p>
+                    </div>
+                    
+                    <div class="footerimg2">
+                        <a href="https://www.instagram.com/accounts/login/?next=/drrobbin_korea/" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01.png" alt=""></a>
+                        <a href="https://www.facebook.com/Dr.Robbin" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01-1.png" alt=""></a>
+                        <a href="https://pf.kakao.com/_ArCxjxd" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/footer_kakao-icon.png" alt=""></a>
+                    </div>
+                </footer>
+            
+
+           <!-- 푸터로고 -->
+            <!-- http://www.drrobbin.com/wp-content/uploads/2019/10/drrobbin-footer-logo.png -->
+            <!-- 푸터 이미지 -->
+            <!-- http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01.png -->
+            <!-- http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01-1.png -->
+            <!-- http://drrobin.cafe24.com/wp-content/uploads/2019/10/footer_kakao-icon.png -->
+           
+            <div class="overlap" id="myNav">
+                <header class="navheader">
+                    <div class="navv">
+                        <div>
+                           <a href="./main.html"><h5>DR.Robbin ▼</h5></a> 
+                            
+                        </div>
+                        
+                        <div id="wrap2" onclick="ham2()">
+                            <div class="line2"></div>
+                            <div class="line2"></div>
+                            <div class="line2"></div>
+                        </div>
+                    </div>
+                    <a href="./about.html"><p>About</p></a>
+                    <a href="./lab.html"><p>Lab</p></a>
+                    <h5>MENU ▼</h5>
+                    <a href="./menu.html"><p>New Menu</p></a>
+                    <a href="./ap.html"><p>Appetizer</p></a>
+                    <a href="./piz.html"><p>Pizza</p></a>
+                    <a href="./pas.html"><p>Pasta</p></a>
+                    <a href="./rice.html"><p>Rice</p></a>
+                    <a href="./kid.html"><p>Kids</p></a>
+                    <a href="./spacial.html"><p>Special</p></a>
+                    <a href="./bever.html"><p>Beverage</p></a>
+                    <a href="./gelato.html"><p>Gelato</p></a>
+                    <a href="./store.html"><h5>STORE</h5></a>
+                    <a href="./event.html"><h5>EVENT</h5></a>
+                    <a href="./recruit.html"><h5>RECRUIT</h5></a>
+                </header>
+            </div>
+<!--     
+                <img onclick="ca()" id="time" src="http://www.drrobbin.com/wp-content/uploads/2020/08/영업시간변경안내_대지-1.jpg" alt="">
+                <img id="cleanliness" src="http://www.drrobbin.com/wp-content/uploads/2020/02/위생안전_대지-1.jpg" alt="">
+                 -->
+            
+    </body>
+</html>

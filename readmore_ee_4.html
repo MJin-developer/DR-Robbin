@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./js/dr.robin.js"></script>
+    <link href="./css/readmore_ee4.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- 헤더영역 -->
+<header class="header"> 
+    <div class="headerwrap">
+    <div class="ww1">
+        <div class="logo">
+            <!-- 로고 이미지 = 클릭시 메인 이미지 이동 -->
+            <a href="./Main.html">
+                <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/dr-robbin-logo-green-150.png" alt="dr-robbin">
+            </a>
+        </div>
+
+        <!-- 상단 메뉴 바 -->
+        <div class="navDiv">
+            <nav class="nav">
+                <ul class="menu">
+                    <li id="navdr" class="mli"><a class="ma" href="./main.html">DR.Robbin ▼</a>
+                        <ul class="sub1">
+                          <li><a class="sa" href="./about.html">About</a></li>
+                            <li><a class="sa" href="./lab.html">Lab</a></li>
+                        </ul> 
+                        <!-- ★★★위치 설정.. -->
+                        <!-- 줄어들시 햄버거메뉴로 변경 -->
+                    </li>
+                    <li class="mli"><a class="ma" href="./menu.html">MENU ▼</a>
+                        <ul class="sub2">
+                            <li><a href="./menu.html" class="sa">NewMenu</a></li>
+                            <li><a href="./ap.html" class="sa">Appetizer</a></li>
+                            <li><a href="./piz.html" class="sa">Pizza</a></li>
+                            <li><a href="./pas.html" class="sa">Pasta</a></li>
+                            <li><a href="./rice.html" class="sa">Rice</a></li>
+                            <li><a href="./kid.html" class="sa">Kids</a></li>
+                            <li><a href="./spacial.html" class="sa">Special</a></li>
+                            <li><a href="./bever.html" class="sa">Beverage</a></li>
+                            <li><a href="./gelato.html" class="sa">Gelato</a></li>
+                        </ul>
+                    </li>
+                    <li class="mli"><a class="ma" href="./store.html">STORE</a></li>
+                    <li class="mli"><a class="ma" href="./event.html">EVENT</a></li>
+                    <li class="mli"><a class="ma" href="./recruit.html">RECRUIT</a></li>
+                    <li class="mli"><a class="ma" href="" onclick="doc()">DOCUMENT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>  <!-- ww1 -->
+   
+        <div class="ww2">
+            <div class="logo">
+                <!-- 로고 이미지 = 클릭시 메인 이미지 이동 -->
+                <a href="./Main.html">
+                    <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/dr-robbin-logo-green-150.png" alt="dr-robbin">
+                </a>
+            </div>
+            <!-- 햄버거 메뉴 -->
+            <div id="wrap" onclick="ham()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="my">
+    <header>
+        <img id="mainimg" src="./img/endEvent4.jpg" alt="">
+    </header>
+    <section>
+        <div id="page">
+            <div id="titlearea">
+                <p id="title">[울산점] WELCOME 이벤트</p>
+                <div id="miniline">
+                    <img src="./img/ee4_1.PNG" alt="" class="miniimg">
+                    <img src="./img/ee4_2.PNG" alt="" class="miniimg">
+                </div>
+                <div id="line"></div>
+                <img id="detail" src="./img/ee4_detail.jpg" alt="">
+            </div>
+            <div id="commentarea">
+                <p id="p1">댓글 남기기</p>
+                <p id="p2"><em>이메일은 공개되지 않습니다. 필수 입력창은 *로 표시되어 있습니다.</em></p>
+                <form action="">
+                    <p class="comment">댓글</p>
+                    <textarea id="comment" class="input"></textarea>
+                    <p class="comment">이름 *</p>
+                    <input type="text" class="input">
+                    <p class="comment">이메일 *</p>
+                    <input type="email" class="input">
+                    <p class="comment">웹사이트</p>
+                    <input type="url" class="input">
+                    <p><label for=""><input type="checkbox" style="width: 25px;" id="cb">나중을 위해 이름, 이메일주소, 웹사이트 주소를 이 브라우저에 저장.</label></p>
+                    <input type="submit" id="submit" value="댓글 작성">
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer1"> 
+    <div class="footer11">
+        <div>
+            <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/drrobbin-footer-logo.png" alt="">
+        </div>
+        <div class="footerimg1">
+            <a href="https://www.instagram.com/accounts/login/?next=/drrobbin_korea/" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01.png" alt=""></a>
+            <a href="https://www.facebook.com/Dr.Robbin" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01-1.png" alt=""></a>
+            <a href="https://pf.kakao.com/_ArCxjxd" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/footer_kakao-icon.png" alt=""></a>
+        </div>
+    </div>
+    <div>
+        <p>(주)닥터로빈 | 대표자: 송경석 |  사업자등록번호 211-87-73725 |  통신판매업신고번호 2019-서울강서-0910 | 서울 강서구 공항대로 396<br>
+            Tel: 02)2693-3100 | Fax: 02)2693-0335  | 개인정보처리방침 |  ⓒ 2017 DR.ROBBIN. ALL RIGHT RESERVED</p>
+    </div>
+</footer>
+
+<footer class="footer2">
+    <div class="fi">
+        <img src="http://www.drrobbin.com/wp-content/uploads/2019/10/drrobbin-footer-logo.png" alt="">
+    </div>
+
+    <div>
+        <p>(주)닥터로빈 | 대표자: 송경석 |  사업자등록번호 211-87-73725 |  통신판매업신고번호 2019-서울강서-0910 | 서울 강서구 공항대로 396<br>
+            Tel: 02)2693-3100 | Fax: 02)2693-0335  | 개인정보처리방침 |  ⓒ 2017 DR.ROBBIN. ALL RIGHT RESERVED</p>
+    </div>
+    
+    <div class="footerimg2">
+        <a href="https://www.instagram.com/accounts/login/?next=/drrobbin_korea/" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01.png" alt=""></a>
+        <a href="https://www.facebook.com/Dr.Robbin" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01-1.png" alt=""></a>
+        <a href="https://pf.kakao.com/_ArCxjxd" target="_blank"><img src="http://drrobin.cafe24.com/wp-content/uploads/2019/10/footer_kakao-icon.png" alt=""></a>
+    </div>
+</footer>
+
+<!-- 푸터로고 -->
+<!-- http://www.drrobbin.com/wp-content/uploads/2019/10/drrobbin-footer-logo.png -->
+<!-- 푸터 이미지 -->
+<!-- http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01.png -->
+<!-- http://drrobin.cafe24.com/wp-content/uploads/2019/10/facebook-logo-01-1.png -->
+<!-- http://drrobin.cafe24.com/wp-content/uploads/2019/10/footer_kakao-icon.png -->
+
+<div class="overlap" id="myNav">
+    <header class="navheader">
+        <div class="navv">
+            <div>
+            <a href="./main.html"><h5>DR.Robbin ▼</h5></a> 
+                
+            </div>
+            
+            <div id="wrap2" onclick="ham2()">
+                <div class="line2"></div>
+                <div class="line2"></div>
+                <div class="line2"></div>
+            </div>
+        </div>
+        <a href="./about.html"><p>About</p></a>
+        <a href="./lab.html"><p>Lab</p></a>
+        <a href=""><h5>MENU ▼</h5></a>
+        <a href="./menu.html"><p>New Menu</p></a>
+        <a href="./ap.html"><p>Appetizer</p></a>
+        <a href="./piz.html"><p>Pizza</p></a>
+        <a href="./pas.html"><p>Pasta</p></a>
+        <a href="./rice.html"><p>Rice</p></a>
+        <a href="./kid.html"><p>Kids</p></a>
+        <a href="./spacial.html"><p>Special</p></a>
+        <a href="./bever.html"><p>Beverage</p></a>
+        <a href="./gelato.html"><p>Gelato</p></a>
+        <a href="./store.html"><h5>STORE</h5></a>
+        <a href="./event.html"><h5>EVENT</h5></a>
+        <a href="./recruit.html"><h5>RECRUIT</h5></a>
+    </header>
+</div>
+<!--     
+    <img onclick="ca()" id="time" src="http://www.drrobbin.com/wp-content/uploads/2020/08/영업시간변경안내_대지-1.jpg" alt="">
+    <img id="cleanliness" src="http://www.drrobbin.com/wp-content/uploads/2020/02/위생안전_대지-1.jpg" alt="">
+    -->
+</body>
+</html>
