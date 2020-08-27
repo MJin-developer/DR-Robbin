@@ -439,11 +439,23 @@ display: none;
     border: 2px solid green ;
     color: #ffffff;
 }
+#document:hover #a{
+    color: white;
+}
 
 #document{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+}
+#document #a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    margin-top: 25px;
 }
 
 /* 내일 할 일 margin top , margin-left  */
