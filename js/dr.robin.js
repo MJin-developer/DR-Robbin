@@ -8,3 +8,4 @@ function ham2(){
     document.getElementById('wrap2').style.display='none';
     document.getElementById('wrap').style.display='flex';
 }
+

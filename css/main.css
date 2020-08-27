@@ -534,3 +534,22 @@
             margin-left: 15px;
         }
 
+
+
+        /* 이미지 */
+        #time{
+            display: inline;
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            z-index: 998;
+        }
+        #cleanliness{
+            display: inline;
+            top: 30px;
+            left: 430px;
+            position: fixed;
+            z-index: 999;
+        }
+
+       

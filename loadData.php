@@ -9,11 +9,15 @@
     
     $app_num=mysqli_num_rows($result);
 
+    $arr=$result;
+
     for($i=0; $i<$app_num; $i++){
         $app=mysqli_fetch_array($result,MYSQLI_ASSOC);
-        echo $app['no'];
-        echo $app['name'];
-        echo $app['email'];
-        echo $app['introduce'];
+        echo '<br>'.$app['no'].'. ';
+        echo '이름 : '.$app['name'].'<br>';
+        echo ' 이메일 : '.$app['email'].'<br>';
+        echo '    소개 : '.$app['introduce'].'<br>';
+
     }
+    
 ?>
