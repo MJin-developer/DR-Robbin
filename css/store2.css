@@ -579,6 +579,10 @@ h5{
     height: 100%;
 }
 
+.overlap h5{
+    text-align: start;
+}
+
 .store_box2:hover:before{
     width: 100%;
 }
