@@ -1,4 +1,5 @@
-*{padding: 0px; margin: 0;}
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+*{padding: 0px; margin: 0; font-family: 'Nanum Myeongjo';}
 li{
     list-style: none;
     margin: 0;
