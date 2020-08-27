@@ -1,0 +1,86 @@
+*{
+    width: 100%;
+    margin: 0px auto;
+}
+#mainimg{
+    margin-top: 200px;
+    width: 60%;
+    max-width: 660px;
+    min-width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#titlearea{
+    margin-top: 70px;
+    width: 60%;
+    max-width: 1000px;
+    min-width: 350px;
+}
+#title{ font-size: 24px; }
+#miniline{
+    margin-top: 10px;
+    width: 100%;
+}
+.miniimg{
+    height: 22px;
+    width: auto;
+    max-width: 320px;
+}
+#line{
+    width: 100%;
+    margin-top: 10px;
+    border: 0.5px dotted gainsboro;
+}
+#detail{
+    width: 100%;
+    max-width: 730px;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#commentarea{
+    margin-top: 50px;
+    min-width: 360px;
+    width: 60%;
+}
+#p1{ font-size: 14px; }
+#p2{
+    margin-top: 10px;
+    font-size: 10px;
+    color: grey;
+}
+.comment{
+    margin-top: 32px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: dimgray;
+}
+#comment{
+    height: 100px;
+}
+.input{
+    border: 0.5px solid gainsboro;
+    padding: 12px;
+}
+.input:focus{ outline: none; }
+#cb{ margin-top: 30px; }
+label{
+    font-size: 12px;
+    color: dimgray;
+}
+#submit{
+    margin-top: 30px;
+    width: 150px;
+    padding: 10px 0px;
+    border: 0.1px solid gainsboro;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+#submit:hover{
+    background-color: green;
+    cursor: pointer;
+}

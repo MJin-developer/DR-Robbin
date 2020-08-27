@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 모바일 기준 스타일 -->
+    <link href="./css/event_mobile.css" rel="stylesheet" type="text/css" media="(max-width:700px)">
+    <!-- 데스크탑 기준 스타일 -->
+    <link href="./css/event.css" rel="stylesheet" type="text/css" media="(min-width:700px)">
+    
+    <script src="./js/event.js"></script>
+</head>
+
+<body onload="onload()">
+    <div id="page">
+        <header>
+            <div id="title" style="background-image: url('./img/EventNotice.JPG');">
+                <h1 id="t1"><strong>Event Notice</strong></h1>
+                <h2 id="t2"><strong>지금 닥터로빈의 새로운 소식을 만나보세요!</strong></h2>
+            </div>
+        </header>
+        <section>
+            <div id="eventButton">
+                <button class="btn" onclick="nowEvent()">진행중인 이벤트</button>
+                <button class="btn" onclick="shopEvent()">매장별 이벤트</button>
+                <button class="btn" onclick="endEvent()">종료된 이벤트</button>
+            </div>
+            <iframe id="iframe" src="./nowEvent.html" marginheight="0" frameborder="0" class="show" scrolling="no"></iframe>
+        </section>
+    </div>
+</body>
+</html>
