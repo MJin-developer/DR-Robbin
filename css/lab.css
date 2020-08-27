@@ -10,14 +10,18 @@ a{
 }
 body{
     margin: 0px;
-    font-family: 'Nanum Myeongjo'
     }
     li{
         list-style: none;
     }
+
+    #amh1{
+        font-family: 'Nanum Myeongjo';
+    }
        
 /* 헤더 부분 스타일 지정*/
 .header{
+    font-family: 'Nanum Myeongjo';
     margin: 0px;
     padding: 0px;
     background-color: white;
@@ -51,6 +55,7 @@ body{
     /* 반응형!! 브라우저 너비 1200xp이상 일때 반응 */
     @media(min-width: 1200px){
         .header{
+            font-family: 'Nanum Myeongjo';
             margin: 0px;
             padding: 0px;
             background-color: white;
