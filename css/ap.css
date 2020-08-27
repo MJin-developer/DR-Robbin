@@ -6,6 +6,145 @@ body{
     margin: 0;
 }
 
+li{
+    list-style: none;
+    margin: 0;
+padding: 0;
+
+}
+
+/* 헤더 부분 스타일 지정*/
+.header{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+    height: 90px; /*★★★네비 지정후 높이 변경해야함 100*/
+    position: fixed; /*상단 고정*/
+    display: flex;
+    justify-content: center;
+    }   
+    .headerwrap{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .ww2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    /* 1200px전에 안보임 */
+    .ww1{
+    display: none;
+    }
+    
+    
+    
+    
+    
+    /* 반응형!! 브라우저 너비 1200xp이상 일때 반응 */
+    @media(min-width: 1200px){
+    .header{
+        margin: 0px;
+        padding: 0px;
+        background-color: white;
+        width: 100%;
+        height: 90px; /*★★★네비 지정후 높이 변경해야함 100*/
+        position: fixed; /*상단 고정*/
+        display: flex;
+        justify-content: center;
+    }   
+    .headerwrap{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ww1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ww2{
+        display: none;
+    }
+    
+    .menu{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    /* 최상위 메뉴 수평 */
+    .menu .mli{
+        float: left;
+        padding: 0;
+        position: relative;
+    }
+    
+    /* 앵커요소 설정 */
+    .menu li .ma{
+        text-decoration: none;
+        color: black;
+        margin-left: 40px;
+        font-family: 'Nanum Myeongjo';
+        font-weight: 800;
+    }
+    /* 서브메뉴 나와도 위치고정 및 설정 */
+    .sub1{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+    .sub1 li{
+        width: 100%;
+    }
+    /* 호버 설정  */
+    .menu li:hover .sub1{
+        display: block;
+        border-top: 3px solid green;          
+        background-color: white;
+        margin-left: 30px;
+    }
+    .sa{
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        margin-left: 15px;
+        margin-right: 120px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: 'Nanum Gothic';
+        font-weight: 700;
+        color: black;
+    }
+    
+    .sa :hover{
+        color: green;
+    }
+    
+    .menu li:hover .sub2{
+        display: block;
+        border-top: 3px solid green;
+        background-color: white;
+        margin-left: 30px;
+    }
+    
+    .sub2{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+    }
+    } /*media*/
+
+
+
 .navbar{
 
 display: flex;
@@ -96,6 +235,129 @@ color: black;
     padding-top: 30px;
     padding-bottom: 150px;
     
+}
+
+/* 푸터 */
+.footer1{
+    display: none;
+}
+.footer2{
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+}
+.fi{
+    margin-bottom: 20px;
+}
+.footerimg2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+/* 푸터  */
+@media(min-width: 800px){
+.footer2{
+display: none;
+}
+
+.footer1{
+display: flex;
+flex-direction: column;
+margin: 60px;
+}
+.footer11{
+display: flex;
+justify-content: space-between;
+}     
+} /*반응형*/
+
+
+
+
+
+/* 햄버거 메뉴 */
+#wrap{
+width: 20px;
+height: 40px;
+background: white;
+justify-content: end;
+}
+#wrap:hover .line{
+background: green;
+}
+
+.line{
+background: black;
+margin-top: 2px;
+width: 100%;
+height: 2px;
+border-radius: 8px;
+position: relative;
+}
+
+#wrap2{
+width: 25px;
+height: 40px;
+justify-content: end;
+}
+#wrap2:hover .line2{
+background: green;
+}
+.line2{
+background: white;
+margin-top: 2px;
+width: 100%;
+height: 2px;
+position: relative;
+border-radius: 8px;
+}
+
+.overlap{
+display: none;
+width: 100%;
+height: 100%;
+background: black;
+opacity: 90%;
+position: fixed;
+z-index: 100;
+top: 0;
+left: 0;
+transition: 0.5;
+overflow: scroll;
+}
+
+.navv{
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+
+.navheader{
+display: flex;
+flex-direction: column;
+align-items:flex-start;
+justify-content: space-between; 
+width: 95%;
+height: 90px;
+color: white;
+margin: 30px;
+}
+.navheader a{
+display: block;
+width: 100%;
+text-decoration: none;
+color: white;
+margin: 5px;
+}
+.navheader a:hover{
+color: green;
+}
+
+.navheader a p{
+margin-left: 15px;
 }
 
 
