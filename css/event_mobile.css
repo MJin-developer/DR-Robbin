@@ -1,5 +1,8 @@
-*{
+#page *{
     margin: 0px auto;
+}
+body{
+    margin: 0px;
 }
 li{
     list-style: none;
@@ -8,6 +11,8 @@ li{
 }
 /* 헤더 부분 스타일 지정*/
 .header{
+    top: 0;
+    left: 0;
     margin: 0px;
     padding: 0px;
     background-color: white;
@@ -16,7 +21,7 @@ li{
     position: fixed; /*상단 고정*/
     display: flex;
     justify-content: center;
-}   
+}
 .headerwrap{
     width: 90%;
     display: flex;
@@ -36,6 +41,8 @@ li{
 /* 반응형!! 브라우저 너비 1200xp이상 일때 반응 */
 @media(min-width: 1200px){
     .header{
+        left: 0;
+        top: 0;
         margin: 0px;
         padding: 0px;
         background-color: white;
@@ -232,20 +239,22 @@ li{
 #eventButton{
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    border-radius: 0px;
+    font-weight: bold;
     margin-top: 70px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 .btn{
+    width: 300px;
     background-color: whitesmoke;
     border: none;
     border-radius: 0px;
     font-size: 25px;
     outline: none;
     font-weight: bold;
-    margin-top: 5px;
-    padding: 7px 0px;
 }
 #iframe{
     padding-top: 30px;
@@ -259,6 +268,9 @@ li{
 }
 iframe, object, embed{
     max-width: 100%;
+}
+button:hover{
+    cursor: pointer;
 }
 button:focus{
     background-color: green;

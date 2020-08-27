@@ -1,5 +1,8 @@
-*{
+#page *{
     margin: 0px auto;
+}
+body{
+    margin: 0px;
 }
 li{
     list-style: none;
@@ -8,6 +11,8 @@ li{
 }
 /* 헤더 부분 스타일 지정*/
 .header{
+    top: 0;
+    left: 0;
     margin: 0px;
     padding: 0px;
     background-color: white;
@@ -36,6 +41,8 @@ li{
 /* 반응형!! 브라우저 너비 1200xp이상 일때 반응 */
 @media(min-width: 1200px){
     .header{
+        left: 0;
+        top: 0;
         margin: 0px;
         padding: 0px;
         background-color: white;
@@ -211,6 +218,7 @@ li{
 .navheader a p{
     margin-left: 15px;
 }
+
 #title{
     margin: 0px;
     width: 100%;
@@ -238,6 +246,7 @@ li{
     min-width: 400px;
 }
 .btn{
+    width: 200px;
     background-color: whitesmoke;
     border: none;
     border-radius: 0px;
@@ -273,6 +282,7 @@ button:focus{
     50% { opacity: 0.8; }
     100% { opacity: 1; }
 }
+
 /* 푸터 */
 .footer1{
     display: none;
