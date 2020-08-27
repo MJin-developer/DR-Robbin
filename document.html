@@ -37,16 +37,14 @@
     <script type="text/javascript" src='./js/jquery-3.5.1.min.js'></script>
 	<script type="text/javascript">
 	
-    $('aqs').on('click',function(){
+    $('#aqs').on('click',function(){
 
 		$.ajax({
 			url : 'http://hkh26.dothome.co.kr/DrRobbin/loadData.php',
 			success : function(data) {
 				var mem = data;
-				$('appl').empty();
-				// for(var i=0; i<mem.length; i++){
-					$('appl').append('<li>' + mem+ '</li>');
-				// }
+				$('#appl').empty();
+					$('#appl').append('<li>' + mem+ '</li>');
 			},
      	})
     });

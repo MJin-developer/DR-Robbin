@@ -10,7 +10,7 @@
         <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU5OZ5JYxo-_MzWpqJIXCM4-2Bm1hooVc&callback=initMap"></script>
         <script>
 
-            function addMarker(){
+            function mapload(){
                 var e= document.getElementById('map');
                 var dr= new google.maps.LatLng(37.5914444, 126.9671949);
                 var opts={
@@ -57,7 +57,7 @@
         
     </head>
     
-    <body>
+    <body onload="mapload()">
         
  <!-- 헤더역역 -->
 <header class="header"> 
@@ -131,8 +131,7 @@
         <!-- 지도 -->
         <div class="locationwrap">
             <h1 id="hh1">닥터로빈 지점</h1>
-            <!-- <button onclick="showMap()">show map</button> -->
-        <button onclick="addMarker()">지점지도보기</button>
+          
             <div id="mapwrap">
                 <div id="map">
                     
