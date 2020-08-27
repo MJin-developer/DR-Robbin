@@ -36,7 +36,7 @@
         }
 
 
-.header{
+.header1{
     width: 100%;
     background-image: url(../img/Newb.jpg);
    
@@ -45,7 +45,7 @@
     
 }
 
-.header #hd1{
+.header1 #hd1{
     font-size: 50px;
     color: white;
     text-align: center;
@@ -54,7 +54,7 @@
 
 }
 
-.header #hdline{
+.header1 #hdline{
    border: 2px solid white;
    margin-left: auto;
    margin-right: auto;
@@ -62,7 +62,7 @@
    margin-top: 40px;
 }
 
-.header #hd2{
+.header1 #hd2{
     font-size: 23px;
     color: white;
     text-align: center;
