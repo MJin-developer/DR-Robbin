@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 #page *{
     margin: 0px auto;
 }
@@ -11,6 +12,7 @@ li{
 }
 /* 헤더 부분 스타일 지정*/
 .header{
+    font-family: 'Nanum Myeongjo';
     top: 0;
     left: 0;
     margin: 0px;
@@ -41,6 +43,7 @@ li{
 /* 반응형!! 브라우저 너비 1200xp이상 일때 반응 */
 @media(min-width: 1200px){
     .header{
+        font-family: 'Nanum Myeongjo';
         left: 0;
         top: 0;
         margin: 0px;
@@ -291,6 +294,7 @@ button:focus{
     display: none;
 }
 .footer2{
+    font-family: 'Nanum Myeongjo';
     display: flex;
     flex-direction: column;
     margin: 60px;
@@ -310,6 +314,7 @@ button:focus{
     }
     
     .footer1{
+        font-family: 'Nanum Myeongjo';
         display: flex;
         flex-direction: column;
         margin: 60px;
