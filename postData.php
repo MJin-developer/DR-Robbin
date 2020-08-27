@@ -11,5 +11,6 @@
     $sql="INSERT INTO drrobbine(name,email,introduce) VALUES('$name','$email','$introduce')";
     $result= mysqli_query($conn,$sql);
 
-    // mysqlii_close($conn);
+    echo '<a href="./Main.html">홈페이지 돌아가기</a>';
+        
 ?>

@@ -17,7 +17,5 @@
         echo '이름 : '.$app['name'].'<br>';
         echo ' 이메일 : '.$app['email'].'<br>';
         echo '    소개 : '.$app['introduce'].'<br>';
-
     }
-    
 ?>
